@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ContactUsFragment">
+
+    <androidx.core.widget.NestedScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:id="@+id/iv_back"
+                style="@style/imageViewStyle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.textview.MaterialTextView
+
+                app:layout_constraintLeft_toRightOf="@id/iv_back"
+                app:layout_constraintTop_toTopOf="@id/iv_back"
+                app:layout_constraintBottom_toBottomOf="@id/iv_back"
+
+
+                style="@style/headingTextBold"
+                android:id="@+id/tv_title"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_us"/>
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:hint="@string/name"
+                style="@style/editTextMaterial">
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/et_name"
+                    android:inputType="text"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/lay_name"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:hint="@string/email"
+
+                style="@style/editTextMaterial">
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/et_email"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+   <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/lay_email"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:hint="@string/subject"
+
+                style="@style/editTextMaterial">
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/et_subject"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+ <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/lay_subject"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:hint="@string/description"
+
+                style="@style/editTextMaterial">
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:gravity="start"
+
+                    android:id="@+id/et_desc"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_instruction"
+                app:layout_constraintTop_toBottomOf="@+id/lay_desc"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="20dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        style="@style/imageViewStyle"
+                        android:id="@+id/iv_info_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="3dp"
+                        app:layout_constraintTop_toTopOf="parent"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:src="@drawable/ic_info"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_i_title"
+
+                        app:layout_constraintTop_toTopOf="@id/iv_info_icon"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_info_icon"
+                        app:layout_constraintLeft_toRightOf="@id/iv_info_icon"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/descTextBold"
+                        android:textSize="12sp"
+                        android:text="@string/instruction_title"/>
+                    <TextView
+                        android:id="@+id/tv_instruction"
+
+                        app:layout_constraintTop_toBottomOf="@id/tv_i_title"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/descText"
+                        android:textSize="10sp"
+                        android:text="@string/instructions"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.button.MaterialButton
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                style="@style/buttonMaterial"
+                android:id="@+id/btn_send"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/send"/>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/gradeint_progress"
+                android:indeterminateTint="@color/colorPrimaryBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="gone"
+                android:elevation="10dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

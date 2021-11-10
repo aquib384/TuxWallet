@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <com.google.android.material.textview.MaterialTextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+       app:layout_constraintBottom_toTopOf="@id/tv_desc"
+       app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+       android:layout_marginTop="20dp"
+       android:layout_marginBottom="10dp"
+       style="@style/headingTextBold"
+       android:gravity="center"
+      android:id="@+id/tv_title"/>
+
+   <com.google.android.material.textview.MaterialTextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+       android:layout_marginTop="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginBottom="10dp"
+       style="@style/descText"
+       android:textStyle="bold"
+       android:gravity="center"
+       android:paddingLeft="20dp"
+       android:paddingRight="20dp"
+      android:id="@+id/tv_desc"/>
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="0dp"
+       android:layout_marginBottom="30dp"
+      android:scaleType="centerInside"
+       app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/tv_title"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      android:id="@+id/iv_image"
+
+   />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

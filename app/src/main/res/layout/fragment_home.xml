@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment">
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/appbar"
+                android:background="@drawable/app_bar_background"
+                android:layerType="software"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:fitsSystemWindows="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                app:layout_collapseMode="parallax"
+                android:layout_width="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="15dp"
+                android:background="@android:color/transparent"
+                android:layout_height="?attr/actionBarSize">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+
+                        android:id="@+id/iv_logo"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/app_name"
+                        android:padding="3dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:src="@drawable/logo"
+                        />
+                    <ImageView
+                        android:id="@+id/iv_logo_name"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:scaleType="centerInside"
+
+                        android:contentDescription="@string/app_name"
+                        android:layout_centerInParent="true"
+                        app:layout_constraintTop_toTopOf="@id/iv_logo"
+                        app:layout_constraintLeft_toRightOf="@id/iv_logo"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_logo"
+                        android:src="@drawable/ic_tux_wallet"
+
+                        />
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="center"
+                        app:tint="@color/white"
+                        android:contentDescription="@string/app_name"
+                        android:layout_centerInParent="true"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/iv_scan"
+                        android:src="@drawable/ic_search"
+
+                        />
+                    <ImageView
+                        android:id="@+id/iv_scan"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="center"
+                        android:visibility="gone"
+                        android:contentDescription="@string/app_name"
+                        android:layout_centerInParent="true"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/const_notification"
+                        android:src="@drawable/ic_scan"
+                        style="@style/imageViewStyle"
+                        />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                       app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:id="@+id/const_notification"
+                       >
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/iv_notify"
+                            android:src="@drawable/ic_notification"
+                           android:padding="4dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:contentDescription="@string/title_notification"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:layout_marginEnd="10dp"
+
+                            />
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginEnd="3dp"
+                            android:layout_marginTop="3dp"
+                            android:visibility="gone"
+                            android:contentDescription="@string/title_notification"
+                            app:layout_constraintTop_toTopOf="@id/iv_notify"
+                            app:layout_constraintRight_toRightOf="@id/iv_notify"
+                            android:src="@drawable/button_bg"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="2dp"
+                            android:background="@drawable/button_bg"
+
+                            android:visibility="gone"
+
+                            android:layout_marginTop="-1dp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_marginEnd="-5dp"
+                            app:layout_constraintTop_toTopOf="@id/iv_notify"
+                            app:layout_constraintRight_toRightOf="@id/iv_notify"
+
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.appbar.MaterialToolbar>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_options"
+                    style="@style/cardViewTux"
+                    app:layout_collapseMode="parallax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/toolbar"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="70dp"
+                    app:cardBackgroundColor="@color/darkBackgroundLightBlue"
+                    app:cardUseCompatPadding="true">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        android:layout_margin="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:id="@+id/lin_tux_wallet"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/lin_wallet"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/buy_tux"
+                                android:src="@drawable/ic_tux"/>
+                            <com.google.android.material.textview.MaterialTextView
+                                style="@style/descText"
+                                android:gravity="center"
+                                android:id="@+id/tv_wallet"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:autoSizeTextType="uniform"
+                                android:maxLines="1"
+                                app:autoSizeMinTextSize="12sp"
+                                android:autoSizeMaxTextSize="14sp"
+                                android:text="@string/buy_tux"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lin_fav"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/img_fav"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/exchange"
+                                android:src="@drawable/ic_exchange"
+                                />
+                            <com.google.android.material.textview.MaterialTextView
+                                style="@style/descText"
+                                android:gravity="center"
+                                android:id="@+id/tv_fav"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:autoSizeTextType="uniform"
+                                android:maxLines="1"
+                                app:autoSizeMinTextSize="12sp"
+                                android:autoSizeMaxTextSize="14sp"
+                                android:text="@string/exchange"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lin_withdraw"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/img_withdraw"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/withdraw"
+                                android:src="@drawable/ic_log_out_dark"
+                                />
+                            <com.google.android.material.textview.MaterialTextView
+                                style="@style/descText"
+                                android:gravity="center"
+                                android:id="@+id/tv_withdraw"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:autoSizeTextType="uniform"
+                                android:maxLines="1"
+                                app:autoSizeMinTextSize="12sp"
+                                android:autoSizeMaxTextSize="14sp"
+                                android:text="@string/withdraw"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lin_deposit"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/img_deposit"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_log_in_dark"
+                                android:contentDescription="@string/deposit"
+                                />
+                            <com.google.android.material.textview.MaterialTextView
+                                style="@style/descText"
+                                android:gravity="center"
+                                android:id="@+id/tv_deposit"
+                                android:textColor="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoSizeTextType="uniform"
+                                android:textSize="12sp"
+                                android:maxLines="1"
+                                app:autoSizeMinTextSize="12sp"
+                                android:autoSizeMaxTextSize="14sp"
+                                android:text="@string/deposit"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_deposit"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/appbar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="5dp"
+            android:clipToPadding="true"
+            app:cardUseCompatPadding="true">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:padding="2dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    style="@style/headingText"
+                     android:id="@+id/tv_deposit_text"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deposit_msg"/>
+                <com.google.android.material.textview.MaterialTextView
+                    app:layout_constraintTop_toBottomOf="@id/tv_deposit_text"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    style="@style/descText"
+                    android:textSize="10sp"
+                     android:id="@+id/tv_terms"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_condition"
+                    tools:ignore="SmallSp" />
+                <ImageView
+
+                    android:id="@+id/iv_deposit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_terms"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/ic_deposit_img"
+                    android:contentDescription="@string/deposit"
+                    android:scaleType="center"/>
+                <com.google.android.material.button.MaterialButton
+                    app:layout_constraintTop_toBottomOf="@id/tv_terms"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    style="@style/buttonMaterial"
+                    android:id="@+id/btn_deposit"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_goneMarginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:drawableEnd="@drawable/ic_go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textSize="14sp"
+                    android:text="@string/deposit"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_coins"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appbar">
+
+
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_coins"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:padding="2dp"
+            android:layout_height="wrap_content">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <include layout="@layout/item_home_coin_shimmer"/>
+                    <include layout="@layout/item_home_coin_shimmer"/>
+                    <include layout="@layout/item_home_coin_shimmer"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </HorizontalScrollView>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:id="@+id/rv_top"/>
+        </RelativeLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_ranking"
+android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rel_coins"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="10dp"
+        android:clipToPadding="true"
+        app:cardUseCompatPadding="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:padding="2dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textview.MaterialTextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            style="@style/headingText"
+            android:textStyle="bold"
+            android:id="@+id/tv_ranking"
+            android:drawableEnd="@drawable/ic_ranking"
+            android:drawablePadding="10dp"
+
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ranking_list"/>
+        <ImageView
+
+            android:id="@+id/iv_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/imageViewStyle"
+            android:visibility="gone"
+            android:contentDescription="@string/ranking_list"
+            android:src="@drawable/ic_more"
+            android:scaleType="center"/>
+        <com.google.android.material.textview.MaterialTextView
+            app:layout_constraintTop_toBottomOf="@id/tv_ranking"
+            app:layout_constraintLeft_toLeftOf="parent"
+            style="@style/descText"
+            android:visibility="gone"
+            android:id="@+id/tv_rank_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ranking_msg"/>
+
+
+
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/card_tab"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/tv_rank_msg"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:cardCornerRadius="15dp"
+    android:clipToPadding="true"
+    android:clipChildren="true"
+    style="@style/cardViewStyleLight"
+    android:layout_margin="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:tabIndicatorColor="@null"
+            app:tabRippleColor="@null"
+            app:tabBackground="@android:color/transparent"
+            android:background="@android:color/transparent"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabIndicator="@drawable/button_bg"
+            app:tabIndicatorHeight="35dp"
+            app:tabIndicatorFullWidth="true"
+            app:tabInlineLabel="true"
+            app:tabIndicatorGravity="bottom"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/colorPrimary"
+            app:tabTextAppearance="@style/descText"
+
+            >
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gainers"
+                tools:ignore="TooDeepLayout" />
+
+            <com.google.android.material.tabs.TabItem
+
+                android:foregroundGravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/losers" />
+            <com.google.android.material.tabs.TabItem
+
+                android:foregroundGravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/h_vol" />
+
+        </com.google.android.material.tabs.TabLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const_top"
+            app:layout_constraintTop_toBottomOf="@id/card_tab"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_pair"
+                android:text="@string/name_vol"
+                style="@style/descText"
+
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv_price"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_price"
+                android:text="@string/last_price"
+                style="@style/descText"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_volume"
+
+                android:text="@string/volume"
+                style="@style/descText"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@id/tv_price"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            app:layout_constraintTop_toBottomOf="@id/const_top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<!--             <com.facebook.shimmer.ShimmerFrameLayout-->
+<!--            android:id="@+id/shimmer_rank"-->
+<!--            android:layout_width="match_parent"-->
+<!--                 android:layout_height="wrap_content">-->
+<!--                 <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <include layout="@layout/item_ranking_shimmer_light"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer_light"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer_light"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer_light"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer_light"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer_light"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer_light"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer_light"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer_light"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer_light"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer_light"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer"/>-->
+<!--                    <include layout="@layout/item_ranking_shimmer_light"/>-->
+<!--                </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--        </com.facebook.shimmer.ShimmerFrameLayout>-->
+
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/rv_ranking"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layoutAnimation="@anim/layout_animation" />
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/gradeint_progress"
+            android:indeterminateTint="@color/colorPrimaryBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            android:elevation="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

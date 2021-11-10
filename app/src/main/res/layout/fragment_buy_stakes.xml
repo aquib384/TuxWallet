@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.BuyStakesFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_warning"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:id="@+id/iv_back"
+                style="@style/imageViewStyle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.textview.MaterialTextView
+
+                app:layout_constraintLeft_toRightOf="@id/iv_back"
+                app:layout_constraintTop_toTopOf="@id/iv_back"
+                app:layout_constraintBottom_toBottomOf="@id/iv_back"
+
+
+                style="@style/headingTextBold"
+                android:id="@+id/tv_title"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_stake"/>
+            <com.google.android.material.textview.MaterialTextView
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                android:layout_marginTop="30dp"
+                style="@style/descTextBold"
+                android:id="@+id/tv_withdraw_msg"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stake_msg"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_crypto1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_withdraw_msg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:orientation="horizontal"
+                app:startIconTint="@null"
+                app:startIconTintMode="src_over"
+                android:hint="@string/crypto"
+                android:focusableInTouchMode="true"
+                style="@style/editTextMaterial">
+
+
+
+                <EditText
+
+                    android:id="@+id/auto_1"
+                    android:inputType="none"
+                    android:editable="false"
+                    android:clickable="true"
+                    android:padding="12dp"
+                    android:focusableInTouchMode="false"
+                    android:layout_gravity="fill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_amount1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="15dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tv_withdraw_msg"
+                app:layout_constraintLeft_toRightOf="@+id/lay_crypto1"
+                app:layout_constraintRight_toRightOf="parent"
+
+                android:hint="@string/amount"
+                style="@style/editTextMaterial">
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/et_amount1"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textview.MaterialTextView
+                app:layout_constraintTop_toBottomOf="@id/lay_crypto1"
+                app:layout_constraintRight_toRightOf="parent"
+                style="@style/descText"
+                android:id="@+id/tv_available_bal"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/balance"/>
+            <LinearLayout
+                android:id="@+id/lin_percent"
+                app:layout_constraintTop_toBottomOf="@id/tv_available_bal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="4">
+                <com.google.android.material.textview.MaterialTextView
+                    app:layout_constraintTop_toBottomOf="@id/tv_exchange_points"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/descTextBold"
+                    android:id="@+id/tv_25"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:backgroundTint="?attr/colorDark"
+                    android:background="@drawable/button_bg"
+                    android:layout_margin="2dp"
+                    android:text="25%"/>
+                <com.google.android.material.textview.MaterialTextView
+                    app:layout_constraintTop_toBottomOf="@id/tv_exchange_points"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/descTextBold"
+                    android:id="@+id/tv_50"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:backgroundTint="?attr/colorDark"
+                    android:background="@drawable/button_bg"
+                    android:layout_margin="2dp"
+                    android:text="50%"/>
+                <com.google.android.material.textview.MaterialTextView
+                    app:layout_constraintTop_toBottomOf="@id/tv_exchange_points"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/descTextBold"
+                    android:id="@+id/tv_75"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:backgroundTint="?attr/colorDark"
+                    android:background="@drawable/button_bg"
+                    android:layout_margin="2dp"
+                    android:text="75%"/>
+                <com.google.android.material.textview.MaterialTextView
+                    app:layout_constraintTop_toBottomOf="@id/tv_exchange_points"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/descTextBold"
+                    android:id="@+id/tv_100"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:backgroundTint="?attr/colorDark"
+                    android:background="@drawable/button_bg"
+                    android:layout_margin="2dp"
+                    android:text="100%"/>
+
+            </LinearLayout>
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/card_ranking"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tv_available_bal"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            android:visibility="gone"-->
+<!--            android:clipToPadding="true"-->
+<!--            app:cardUseCompatPadding="true">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                style="@style/descTextBold"-->
+<!--                android:id="@+id/tv_ranking"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/stake_msg_title"/>-->
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                style="@style/descText"-->
+<!--                android:id="@+id/tv_msg1"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/stake_msg_details"/>-->
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                style="@style/descTextBold"-->
+<!--                android:id="@+id/tv_rewrds"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/rewards_msg_title"/>-->
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                style="@style/descText"-->
+<!--                android:id="@+id/tv_msg2"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/reward_msg_details"/>-->
+
+
+<!--        </LinearLayout>-->
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+        <TextView
+            android:id="@+id/tv_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stake_warning"
+            style="@style/descText"
+            android:textSize="12sp"
+            android:layout_margin="10dp"
+            app:drawableStartCompat="@drawable/ic_warning"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_confirm"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/gradeint_progress"
+            android:indeterminateTint="@color/colorPrimaryBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            android:elevation="10dp"/>
+        <com.google.android.material.button.MaterialButton
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        style="@style/buttonMaterial"
+        android:id="@+id/btn_confirm"
+
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/stake"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

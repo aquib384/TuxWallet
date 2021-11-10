@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="5dp"
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/iv_icon"
+
+                android:contentDescription="@string/crypto"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+            <com.google.android.material.textview.MaterialTextView
+                app:layout_constraintTop_toBottomOf="@id/iv_icon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="5dp"
+                style="@style/headingTextBold"
+                android:textSize="15sp"
+                android:id="@+id/tv_title"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              />
+             <com.google.android.material.textview.MaterialTextView
+                app:layout_constraintBottom_toTopOf="@id/tv_diff"
+                app:layout_constraintLeft_toLeftOf="parent"
+                style="@style/descText"
+                android:textColor="@color/grey"
+
+                 android:id="@+id/tv_currency"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              />
+            <com.google.android.material.textview.MaterialTextView
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                style="@style/descTextBold"
+                android:id="@+id/tv_price"
+                android:textAlignment="viewStart"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlCompat" />
+            <com.google.android.material.textview.MaterialTextView
+                app:layout_constraintBottom_toTopOf="@id/tv_price"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/descTextBold"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:textAlignment="viewStart"
+                android:id="@+id/tv_diff"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlCompat" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

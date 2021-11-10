@@ -1,0 +1,334 @@
+<resources>
+    <string name="app_name">TuxWallet</string>
+    <string name="powered_by">Powered By</string>
+    <string name="company">TUX GLOBAL SDN. BHD.</string>
+    <string name="country">Country</string>
+    <string name="Rs">\u20B9</string>
+
+    <string name="btc_dv_path" translatable="false">m/49\'/0\'/0\'/0/0</string>
+
+
+    //guest login
+    <string name="guest_title">Create your Wallet</string>
+    <string name="guest_desc">You have to create your wallet in order to browse this section.</string>
+
+    //welcome
+    <string name="switch_theme"><b><font color="#025FD5">Switch to dark theme</font></b> </string>
+    <string name="screen1_title">Safely Store Crypto  </string>
+    <string name="screen1_desc">You can put your crypto safe here, switch into a
+ self custody platform. </string>
+    <string name="screen2_title">Track Market Value  </string>
+    <string name="screen2_desc">You can buy, sell or exchange large variety
+of cryptocurrencies easily.  </string>
+    <string name="screen3_desc">You can get the market value of your crypto
+with user friendly interface. </string>
+    <string name="guest">Enter as a Guest  </string>
+    <string name="new_wallet">New Wallet </string>
+    <string name="old_wallet">Recover Wallet </string>
+
+    //signup
+    <string name="create_wallet">Create a new wallet</string>
+    <string name="enter_phone">Enter phone number to continue</string>
+    //recover wallet
+    <string name="security_pin">Security PIN</string>
+    <string name="pin">Pin</string>
+    <string name="verify">Verify</string>
+    <string name="enter_security_pin">Enter your security PIN</string>
+    <string name="enter_phrase_key">Enter Phrase Key</string>
+    <string name="enter_security_key">Enter 12 words phrase key for the wallet you want to recover</string>
+    //new wallet
+    <string name="new_wallet_msg">If you ever lose your phone, you will need this phrase to recover your wallet</string>
+    <string name="keep_safe">Please note it down to access your wallet in future</string>
+    <string name="word_phrase">12 word phrase key</string>
+
+    //setpin
+    <string name="submit">Submit</string>
+    <string name="set_pin_title"> Set Up Security PIN</string>
+    <string name="pin_error">Please enter pin</string>
+    <string name="cpin_error">Please re-enter pin</string>
+    <string name="confirm_pin"> Confirm Pin</string>
+    <string name="pins_should_match">Pins should match</string>
+    <string name="never_share_pin">Never share your Pin with anyone </string>
+    <string name="device_metrics">Turn on Device Biometrics  </string>
+    <string name="set_pin_message">Now that you have created your wallet, why don’t you setup pin for your account’s safety </string>
+    //Home Activity
+
+    <string name="title_home">Home</string>
+    <string name="title_market">Market</string>
+    <string name="title_trade">Trade</string>
+    <string name="title_stake">Stakes</string>
+    <string name="title_wallet">Wallet</string>
+    <string name="title_account">Account</string>
+    <string name="title_search">Search</string>
+    <string name="title_notification">Notifications</string>
+    <string name="title_scan">Scan</string>
+    <string name="login_first">You need to Login First !!</string>
+
+
+    //home fragment
+    <string name="tux_wallet">Tux Wallet</string>
+    <string name="buy_tux">Buy Tux</string>
+    <string name="deposit">Deposit</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="favourite">Favorites</string>
+    <string name="exchange">Exchange</string>
+    <string name="gainers">Gainers</string>
+    <string name="losers">Losers</string>
+    <string name="h_vol">24h vol</string>
+    <string name="pair">Pair</string>
+    <string name="last_price">Last Price</string>
+    <string name="volume_btc">Volume</string>
+    <string name="ranking_list">Ranking List</string>
+    <string name="terms_condition">
+        <font color="#025FD5">*Terms &amp; Conditions apply</font></string>
+    <string name="ranking_msg"><font><small>Crypto staking is a way to earn passive income</small></font></string>
+    <string name="deposit_msg">Get $1 worth of BTC on your First Deposit.<br> </br>
+        <font>
+            <small>
+                Coin staking is becoming very popular among cryptocurrency investors
+            </small>
+        </font>
+    </string>
+
+
+    //account fragment
+    <string name="logout">Logout</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="edit_desc">Edit/Update your profile details</string>
+    <string name="settings">Settings</string>
+    <string name="settings_desc">Update your account settings</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="contact_desc">We are here to help</string>
+
+    //wallet fragment
+    <string name="balance">Available Balance</string>
+    <string name="transaction">Transactions</string>
+    <string name="my_wallet">My Wallet</string>
+
+    //stake fragment
+    <string name="stake_title">Get right on your stakes!</string>
+    <string name="stake_desc">
+         <font><small>
+                Coin staking is becoming very popular among cryptocurrency investors
+         </small> </font> </string>
+    <string name="stake_histry">View your stakes history here!</string>
+    <string name="stake">Stake</string>
+    <string name="coin">Coin</string>
+    <string name="date" translatable="false">Date</string>
+    <string name="stake_history">Stake History</string>
+    <string name="stake_msg_title">Staking</string>
+    <string name="stake_msg_details">The wallet’s entire balance will be staked to a validator, and rewards are automatically distributed according to the amount held in the wallet. There is no function to stake a partial amount in your wallet. In addition, you can send and receive tokens in your wallet anytime, while staking to a validator (There is no lock period). When you first stake, 2 ADA will be charged by the blockchain to create a stake certificate as a deposit. For this, our wallet is set to be able to stake when you have 5 ADA minimum.
+
+ </string>
+
+    <string name="rewards_msg_title">Rewards</string>
+
+    <string name="reward_msg_details"> Rewards will be distributed per epoch. One epoch is approximately 5 days. Since rewards are automatically distributed from the blockchain, there is no need to “claim rewards”.
+    Please note that in case that you stake ADA in the first time, you will need to wait 20 days to be approved and then another 5 days (one epoch) for the first cycle to complete in order to earn rewards. This means you should start earning your rewards 25 days after clicking Staking and then every 5 days after that.
+    </string>
+
+    //settings fragment
+
+    <string name="change_pin">Change Wallet Pin</string>
+    <string name="set_pin">Set Pin</string>
+    <string name="language">Language</string>
+    <string name="currency">Currency</string>
+    <string name="biometrics">Biometrics for login</string>
+    <string name="pin_login">Pin for login</string>
+    <string name="night">Dark Mode</string>
+    <string name="curreny_updated">Currency Updated Successfully</string>
+    //language
+    <string name="english">English (US)</string>
+    <string name="japanese">Japanese</string>
+    <string name="chinese">Chinese</string>
+    <string name="confirm">Confirm</string>
+    <string name="language_title">Choose language</string>
+
+
+    //change pin
+    <string name="old_pin">Old Pin</string>
+    <string name="new_pin">New Pin</string>
+    <string name="conf_pin">Confirm Pin</string>
+    <string name="old_pin_incorrect">The old pin entered is incorrect</string>
+
+    //pin login
+    <string name="forgot_pin">Forgot Pin</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_pin">Please enter your PIN</string>
+    //edit profile
+    <string name="save_changes">Save Changes</string>
+
+
+    //contact us
+    <string name="email">Email ID</string>
+    <string name="name">Full Name</string>
+    <string name="send">Send</string>
+    <string name="subject">Subject</string>
+    <string name="description">Description</string>
+    <string name="subject_error">Enter Subject</string>
+    <string name="desc_error">Enter Description</string>
+    <string name="name_error">Enter your Full Name</string>
+    <string name="email_error">Enter your Email ID</string>
+    <string name="email_recieved">We have  received your mail and we’ll get back to you soon</string>
+    <string name="instruction_title">Instructions</string>
+    <string name="instructions">*Your email won’t be published <br> </br>
+        *it may take 2-3 working days to revert back <br> </br></string>
+    <!--    *if there is no revert then call on 1800-000-000</string>-->
+
+    //market
+    <string name="name_vol">Name/Vol</string>
+    <string name="change_24"> 24 Hr Change</string>
+
+    //exchange
+    <string name="crypto">Crypto</string>
+    <string name="amount">Amount</string>
+    <string name="exchanging">Exchanging</string>
+    <string name="receiving">Receiving</string>
+
+    // notifications
+    <string name="clear_all">Clear All</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="dummy_text">Tincidunt a ipsum facilisis egestas in vel. Tristique tincidunt semper turpis sit vestibulum consequat. Mi varius sit vitae.</string>
+
+    // withdraw
+    <string name="withdraw_msg">Select the crypto and enter the amount you want to withdraw </string>
+    <string name="wallet_id">Wallet ID </string>
+    <string name="add_account">Add a Bank Account</string>
+    <string name="withdraw_to">Withdraw To</string>
+    <string name="acc_ending_with">Account ending with </string>
+
+    //buy Stakes
+    <string name="stake_warning">Stake on your own risk</string>
+    <string name="stake_msg">Select the crypto and the amount you want to stake </string>
+    <string name="continues">Continue</string>
+    // QR Code
+    <string name="pay_qr">Scan QR code </string>
+    <string name="show_qr">Show my QR code</string>
+    <string name="scan_qr"> QR code Scanner </string>
+    // trade
+    <string name="one_day" translatable="false">1D</string>
+    <string name="one_minute" translatable="false">1M</string>
+    <string name="one_hour" translatable="false">1H</string>
+    <string name="coin_performance">Coin Performance</string>
+    <string name="coin_per_msg">View coins latest performance</string>
+    <string name="buy_order">Buy Order</string>
+    <string name="sell_order">Sell Order</string>
+    <string name="track_order">Track Order</string>
+    <string name="buy">Buy</string>
+    <string name="sell">Sell</string>
+    <string name="total_orders">Total Orders</string>
+
+    //coinlist
+    <string name="choose_crypto">Choose Crypto</string>
+
+    // send
+    <string name="wallet_address">Wallet Address</string>
+    <string name="top_pairs">Top Pairs</string>
+    <string name="price">Price</string>
+    <string name="volume">Volume</string>
+    <string name="amount_error">Enter Amount </string>
+    <string name="amount_exceed_error">Amount exceeds available balance</string>
+    <string name="address_error">Enter Address</string>
+    <string name="withdraw_instructions">
+        <![CDATA[*Minimum amount to be transferred at one time is n <br>
+        *Maximum amount to be transferred at one time is n*2 </br><br>*Transaction Fee applicable </br>
+    <br>*Only n number of transactions can be made in a day.</br>]]></string>
+    <string name="receive_instructions">
+        <![CDATA[**Please select correct coin along with the address.<br>
+        **Sending any other coin may result in permanent basis. </br>]]></string>
+    <string name="send_msg">Select the crypto and enter the amount you wish to send </string>
+
+    //receive
+    <string name="copy_link">Copy Link</string>
+    <string name="copy">Copy </string>
+    <string name="share">Share</string>
+    <string name="receive">Receive</string>
+    <string name="pending">Pending</string>
+    <string name="my_wallet_add">My Wallet Address</string>
+    <string name="receive_msg">Select the crypto to view your address and Qr Code </string>
+
+    //trade
+    <string name="vol">VOL</string>
+    <string name="no_data">No Data Available</string>
+
+    // add account
+    <string name="account_msg">Enter account holder details  i.e., name, account number &amp; IFSC code.</string>
+    <string name="account_number">Account Number</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="holder_name">Account Holder’s name</string>
+    <string name="add_account_title">Enter Account details</string>
+
+    // select bank
+    <string name="select_bank_title">Select your bank</string>
+
+    //pin unlock
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+
+    //api
+    <string name="signed_up">Signed Up Successfully</string>
+    <string name="login_success">Logged in Successfully</string>
+    <string name="signup_error">Something went wrong .Try Again !!</string>
+    <string name="hex_error">Error initializing transaction !!</string>
+    <string name="select">Select the </string>
+    <string name="account_exist_error">Account does not exist </string>
+    <string name="account_create_error">Account already registered with this phrase </string>
+    <string name="the_word">word in the restore phrase</string>
+
+    //coins
+    <string name="chainlink">CHAINLINK</string>
+    <string name="uniswap">UNISWAP</string>
+    <string name="aave_token">AAVE TOKEN</string>
+    <string name="sushiswap">SUSHISWAP</string>
+    <string name="band_token">BANDTOKEN</string>
+    <string name="ic_prefix">ic_</string>
+    <string name="ic_suffix">_24</string>
+
+
+    //send receipt
+    <string name="network_fee">Network fee</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="nounce">Nounce</string>
+    <string name="view_details">View Details</string>
+    <string name="wallet">Wallet</string>
+    <string name="txn_hash">Txn Hash</string>
+    <string name="block">Block</string>
+    <string name="action">Action</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="text_copied">Text copied to clipboard</string>
+    <string name="tx_id">Transaction Id</string>
+    <string name="please_select_language">Please Select Language</string>
+    <string name="tow_high">24H High</string>
+    <string name="one_high">1H High</string>
+    <string name="one_low">1H Low</string>
+    <string name="tow_low">24H Low</string>
+
+
+    // upgrading screen
+    <string name="upgrade_title">Upgrade Wallet</string>
+    <string name="upgrade_msg">We are upgrading your wallet</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="performance_msg">Coin performance in last 24 hours</string>
+    <string name="copy_hash">Copy Tx ID</string>
+    <string name="browse">Verify on Blockchain</string>
+    <string name="st">st</string>
+    <string name="nd">nd</string>
+    <string name="rd">rd</string>
+    <string name="th">th</string>
+    <string name="tuxc_price_dollar" translatable="false">"$ 7.30"</string>
+    <string name="tuxc_price_yen" translatable="false">"¥ 834.00"</string>
+    <string name="logout_msg">Your wallet will reset and go back to Create New Wallet or Recover Wallet. Make sure you have saved your Recovery Phrase</string>
+    <string name="check_recovery_phase">Check Recovery Phase</string>
+
+
+</resources>

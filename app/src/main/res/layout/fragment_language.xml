@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.LanguageFragment">
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+         android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:id="@+id/iv_back"
+                style="@style/imageViewStyle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.textview.MaterialTextView
+
+                app:layout_constraintLeft_toRightOf="@id/iv_back"
+                app:layout_constraintTop_toTopOf="@id/iv_back"
+                app:layout_constraintBottom_toBottomOf="@id/iv_back"
+
+
+                style="@style/headingTextBold"
+                android:id="@+id/tv_title"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/language_title"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_english"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:cardCornerRadius="10dp"
+                android:clipToPadding="true"
+                android:clickable="true"
+                app:cardUseCompatPadding="true">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textview.MaterialTextView
+                        app:layout_constraintTop_toTopOf="@id/iv_eng"
+                        app:layout_constraintStart_toEndOf="@+id/iv_eng"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_eng"
+                        style="@style/descTextBold"
+                        android:id="@+id/tv_english"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/english"/>
+
+                    <ImageView
+
+                        android:id="@+id/iv_eng"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:src="@drawable/ic_english_flag"
+                        />
+                    <RadioButton
+                        style="@style/imageViewStyle"
+                        android:id="@+id/radio_english"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                      android:buttonTint="@color/colorPrimary"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_japanese"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/card_english"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:cardCornerRadius="10dp"
+                android:clipToPadding="true"
+                android:clickable="true"
+                app:cardUseCompatPadding="true">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textview.MaterialTextView
+                        app:layout_constraintTop_toTopOf="@id/iv_jap"
+                        app:layout_constraintStart_toEndOf="@+id/iv_jap"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_jap"
+                        style="@style/descTextBold"
+                        android:id="@+id/tv_japenese"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/japanese"/>
+
+                    <ImageView
+
+                        android:id="@+id/iv_jap"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:src="@drawable/ic_japenese_flag"
+                        />
+                    <RadioButton
+                        style="@style/imageViewStyle"
+                        android:id="@+id/radio_japanese"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="1"
+                        android:scaleY="1"
+
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                  android:buttonTint="@color/colorPrimary"
+                        />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_chinese"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/card_japanese"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:cardCornerRadius="10dp"
+                android:clipToPadding="true"
+                android:clickable="true"
+                app:cardUseCompatPadding="true">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textview.MaterialTextView
+                        app:layout_constraintTop_toTopOf="@id/iv_chinese"
+                        app:layout_constraintStart_toEndOf="@+id/iv_chinese"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_chinese"
+                        style="@style/descTextBold"
+                        android:id="@+id/tv_chinese"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chinese"/>
+
+                    <ImageView
+
+                        android:id="@+id/iv_chinese"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:src="@drawable/ic_china_flag"
+                        />
+                    <RadioButton
+                        style="@style/imageViewStyle"
+                        android:id="@+id/radio_chinese"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="1"
+                        android:scaleY="1"
+
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:buttonTint="@color/colorPrimary"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.button.MaterialButton
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                style="@style/buttonMaterial"
+                android:id="@+id/btn_confirm"
+
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/confirm"/>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/gradeint_progress"
+                android:indeterminateTint="@color/colorPrimaryBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="gone"
+                android:elevation="10dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

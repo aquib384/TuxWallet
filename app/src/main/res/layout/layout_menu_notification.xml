@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="2dp"
+
+    android:id="@+id/const_notification"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/iv_notify"
+        android:src="@drawable/ic_notification"
+        android:padding="8dp"
+       style="@style/imageViewStyle"
+        app:layout_constraintTop_toTopOf="parent"
+
+       app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="10dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+       android:paddingTop="2dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button_bg"
+        android:text="2"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/iv_notify"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.WithdrawFragment">
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:id="@+id/iv_back"
+                style="@style/imageViewStyle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.textview.MaterialTextView
+
+                app:layout_constraintLeft_toRightOf="@id/iv_back"
+                app:layout_constraintTop_toTopOf="@id/iv_back"
+                app:layout_constraintBottom_toBottomOf="@id/iv_back"
+
+
+                style="@style/headingTextBold"
+                android:id="@+id/tv_title"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send"/>
+            <com.google.android.material.textview.MaterialTextView
+
+               app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                style="@style/descTextBold"
+                android:visibility="gone"
+                android:id="@+id/tv_withdraw_msg"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_msg"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_crypto1"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_withdraw_msg"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:orientation="horizontal"
+                app:startIconTint="@null"
+                app:startIconTintMode="src_over"
+                android:hint="@string/crypto"
+                android:focusableInTouchMode="true"
+                style="@style/editTextMaterial">
+
+
+
+                <EditText
+                    android:id="@+id/auto_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:drawablePadding="10dp"
+                    android:focusableInTouchMode="false"
+                    android:inputType="none"
+                    android:padding="12dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_amount1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_withdraw_msg"
+                app:layout_constraintLeft_toRightOf="@+id/lay_crypto1"
+                app:layout_constraintRight_toRightOf="parent"
+
+                android:hint="@string/amount"
+                style="@style/editTextMaterial">
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/et_amount1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:padding="12dp"
+                    android:layout_gravity="fill"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lay_amount1"
+                style="@style/descText"
+                android:id="@+id/tv_available_bal"
+                android:padding="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/balance"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_available_bal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/lin_wallet"
+                android:weightSum="5">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_wallet"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:hint="@string/wallet_address"
+                android:layout_weight="4.8"
+                style="@style/editTextMaterial">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:padding="12dp"
+                    android:layout_gravity="fill"
+                    android:id="@+id/et_wallet"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <ImageView
+
+                        android:id="@+id/iv_scan"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".1"
+                        android:contentDescription="@string/exchange"
+                        android:padding="10dp"
+                        style="@style/imageViewStyle"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_scan"
+                        android:background="@drawable/button_bg"
+                        android:backgroundTint="?attr/colorDark"
+                        />
+
+            </LinearLayout>
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:id="@+id/card_instruction"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/lin_wallet"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                app:cardUseCompatPadding="true"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <ImageView-->
+<!--                        style="@style/imageViewStyle"-->
+<!--                        android:id="@+id/iv_info_icon"-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_marginEnd="10dp"-->
+
+<!--                        app:layout_constraintTop_toTopOf="parent"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        android:src="@drawable/ic_info"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_i_title"-->
+
+<!--                        app:layout_constraintTop_toTopOf="@id/iv_info_icon"-->
+<!--                        app:layout_constraintBottom_toBottomOf="@id/iv_info_icon"-->
+<!--                        app:layout_constraintLeft_toRightOf="@id/iv_info_icon"-->
+
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        style="@style/descTextBold"-->
+<!--                        android:textSize="12sp"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:text="@string/instruction_title"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_instruction"-->
+<!--                        app:layout_constraintTop_toBottomOf="@id/tv_i_title"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                        app:layout_constraintRight_toRightOf="parent"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        style="@style/descText"-->
+<!--                        android:textSize="11sp"-->
+<!--                       />-->
+<!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+            <com.google.android.material.button.MaterialButton
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                style="@style/buttonMaterial"
+                android:id="@+id/btn_confirm"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/send"/>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/gradeint_progress"
+                android:indeterminateTint="@color/colorPrimaryBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="gone"
+                android:elevation="10dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

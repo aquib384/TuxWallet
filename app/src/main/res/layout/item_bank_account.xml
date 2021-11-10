@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lay_wallet"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="1dp"
+        android:hint="@string/withdraw_to"
+        android:layout_weight="4.2"
+        style="@style/editTextMaterial">
+        <com.google.android.material.textfield.TextInputEditText
+            android:padding="12dp"
+            android:layout_gravity="fill"
+            android:id="@+id/et_wallet"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:editable="false"
+            android:enabled="false"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="Deprecated" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

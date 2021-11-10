@@ -1,0 +1,305 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out</item>
+    </style>
+    <style name="Theme.TuxWalletNoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textViewStyle">@style/descText</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorAccent">@color/hintTextColorLight</item>
+        <item name="buttonStyle">@style/buttonMaterial</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="cardViewStyle">@style/cardViewStyle</item>
+        <item name="materialCardViewStyle">@style/cardViewStyle</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:toolbarStyle">@style/ToolbarStyle</item>
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
+
+        //icons
+        <item name="withdrawIcon">@drawable/ic_log_out_light</item>
+        <item name="depositIcon">@drawable/ic_log_in_light</item>
+        <item name="tuxIcon">@drawable/ic_tux_light</item>
+        <item name="transactionIcon">@drawable/ic_transaction_light</item>
+        <item name="exchangeIcon">@drawable/ic_exchange_light</item>
+        <item name="markerIcon">@color/lightCardBackground</item>
+        <item name="colorLight">@color/cardview_light_background</item>
+        <item name="appBarColor">@color/cardview_light_background</item>
+        <item name="colorDark">@color/lightCardBackground</item>
+        <item name="countryCodeTextColor">@color/black</item>
+        <item name="searchIconTint">@color/colorPrimary</item>
+        <item name="textColor">@color/black</item>
+        <item name="indicatorColor">@color/hintTextColorLight</item>
+        <item name="windowColor">@color/white</item>
+        <item name="light_dark_background">@color/lightCardBackground</item>
+        <item name="toolbarShadow">@drawable/toolbar_shadow_light</item>
+        <item name="customShadowColor">@color/trans_light_grey</item>
+        <item name="shimmer">@color/trans_light_grey</item>
+        <item name="shimmerLight">@color/trans_black_grey</item>
+<!--        <item name="toolbar_background_custom">@color/lightCardBackground</item>-->
+
+    </style>
+        <!-- Customize your theme here. -->
+
+        <style name="editTextMaterial" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <item name="hintAnimationEnabled">false</item>
+            <item name="hintEnabled">true</item>
+            <item name="expandedHintEnabled">false</item>
+            <item name="expandedTitleMargin">5dp</item>
+            <item name="hintTextAppearance">@style/hintTextAppearance</item>
+            <!--        <item name="editTextBackground">@drawable/edit_bg</item>-->
+            <item name="android:textColor">@color/black</item>
+            <item name="android:textStyle">bold</item>
+            <item name="errorTextColor">@color/red</item>
+            <item name="boxStrokeColor">@color/text_input_layout_light</item>
+            <item name="boxStrokeErrorColor">@color/red</item>
+<!--            <item name="boxBackgroundColor">@color/white</item>-->
+            <item name="boxBackgroundMode">outline</item>
+            <item name="boxCornerRadiusTopEnd">6dp</item>
+            <item name="boxCornerRadiusTopStart">6dp</item>
+            <item name="boxCornerRadiusBottomEnd">6dp</item>
+            <item name="boxCornerRadiusBottomStart">6dp</item>
+            <item name="helperTextTextColor">@color/hintTextColorLight</item>
+            <item name="colorControlNormal">@color/hintTextColorLight</item>
+            <item name="colorControlActivated">@color/colorPrimary</item>
+            <item name="fontFamily">@font/poppins_regular</item>
+            <item name="android:textSize">14sp</item>
+            <item name="android:editTextColor">@color/black</item>
+            <item name="iconSize">20dp</item>
+            <item name="iconPadding">5dp</item>
+
+        </style>
+
+        <style name="headingTextBold" parent="Widget.MaterialComponents.TextView">
+            <item name="android:textStyle">bold</item>
+            <item name="android:textSize">18sp</item>
+            <item name="android:fontFamily">@font/poppins_bold</item>
+            <item name="android:textColor">@color/black</item>
+        </style>
+    <style name="headingText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:textColor">@color/black</item>
+        </style>
+        <style name="descText" parent="Widget.MaterialComponents.TextView">
+            <item name="android:fontFamily">@font/poppins_regular</item>
+            <item name="android:textSize">14sp</item>
+            <item name="android:textColor">@color/black</item>
+
+        </style>
+    <style name="descTextBold" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+            <item name="android:textSize">15sp</item>
+            <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="buttonMaterial" parent="Widget.MaterialComponents.Button">
+        <item name="textAllCaps">false</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="backgroundTint">@null</item>
+        <item name="expandActivityOverflowButtonDrawable">@drawable/button_bg</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="height">50dp</item>
+        <item name="android:height">50dp</item>
+        <item name="android:textSize">14sp</item>
+            <item name="android:gravity">center</item>
+            <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">6dp</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">6dp</item>
+            <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+        <style name="buttonMaterialUnselect" parent="Widget.MaterialComponents.Button">
+        <item name="textAllCaps">false</item>
+        <item name="android:background">@drawable/button_border</item>
+        <item name="backgroundTint">@null</item>
+        <item name="expandActivityOverflowButtonDrawable">@drawable/button_border</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="height">50dp</item>
+        <item name="android:height">50dp</item>
+        <item name="android:textSize">14sp</item>
+            <item name="android:gravity">center</item>
+            <item name="android:textAlignment">center</item>
+        <item name="android:textColor">?attr/textColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">6dp</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">6dp</item>
+            <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="hintTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="cardViewStyle" parent ="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/lightCardBackground</item>
+        <item name="backgroundColor">@color/lightCardBackground</item>
+        <item name="android:background">@color/lightCardBackground</item>
+        <item name="android:clipChildren">true</item>
+        <item name="android:clipToPadding">true</item>
+
+    </style>
+    <style name="cardViewTux" parent ="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/lightCardBackground</item>
+        <item name="backgroundColor">@color/lightCardBackground</item>
+        <item name="android:background">@color/lightCardBackground</item>
+        <item name="android:clipChildren">true</item>
+        <item name="android:clipToPadding">true</item>
+
+    </style>
+    <style name="searchView" parent ="Widget.MaterialComponents.CardView">
+
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:backgroundTint">@color/lightCardBackground</item>
+
+    </style>
+
+
+    <style name="cardViewStyleLight" parent ="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
+        <item name="backgroundColor">@color/cardview_light_background</item>
+        <item name="android:background">@color/cardview_light_background</item>
+        <item name="android:clipChildren">true</item>
+        <item name="android:clipToPadding">true</item>
+
+    </style>
+
+    <style name="imageViewStyle" parent ="">
+        <item name="tint">@color/darkBackgroundBlack</item>
+        <item name="android:tint">@color/darkBackgroundBlack</item>
+    </style>
+
+    <style name="MyActionBarTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/white</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="iconTint">@color/black</item>
+        <item name="android:iconTint">@color/black</item>
+        <item name="titleTextStyle">@style/MyActionBarTitle</item>
+    </style>
+
+
+    <style name="tabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="background">@drawable/button_bg</item>
+        <item name="backgroundTint">@color/lightCardBackground</item>
+
+    </style>
+
+  <style name="bottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="background">@color/cardview_light_background</item>
+        <item name="backgroundTint">@color/cardview_light_background</item>
+  </style>
+
+
+    <style name="ToolbarStyle" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="android:contentInsetStart">0dp</item>
+        <item name="elevation">10dp</item>
+        <item name="background">?attr/appBarColor</item>
+        <item name="android:background">?attr/appBarColor</item>
+        <item name="backgroundTint">?attr/appBarColor</item>
+        <item name="android:backgroundTint">?attr/appBarColor</item>
+    </style>
+
+    <style name="floatingButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="shapeAppearance">@drawable/button_bg</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">20dp</item>
+
+    </style>
+
+    <style name="bottomSheetDialog" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">?attr/colorDark</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="dialog" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">?attr/colorDark</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    <style name="Theme.MaterialComponents.Dialog" >
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">?attr/colorDark</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    <style name="SwitchTheme" parent="Theme.MaterialComponents.Light">
+        <item name="useMaterialThemeColors">false</item>
+        <item name="colorControlNormal">@color/colorPrimaryBlue</item>
+        <item name="colorControlActivated">@color/colorPrimaryBlue</item>
+        <item name="colorOnSurface">@color/hintTextColorLight</item>
+        <item name="colorOnBackground">@color/hintTextColorLight</item>
+        <item name="thumbColor">@color/colorPrimary</item>
+
+
+    </style>
+
+    <style name="full_screen_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@color/lightCardBackground</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+    <item name="android:textViewStyle">@style/descTextBold</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:checkedTextViewStyle">@style/descTextBold</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+        <style name="Theme.Transparent" parent="Theme.MaterialComponents.NoActionBar">
+            <item name="android:windowIsTranslucent">true</item>
+            <item name="android:windowBackground">@color/white</item>
+            <item name="android:windowNoTitle">true</item>
+
+            <item name="android:backgroundDimEnabled">false</item>
+        </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

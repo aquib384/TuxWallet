@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@drawable/button_small_gradient"
+    android:backgroundTint="?attr/colorDark"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<!--<ImageView-->
+<!--    android:layout_width="80dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:src="@drawable/button_small_gradient"-->
+<!--    app:tint="?attr/markerIcon"-->
+<!--    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    android:layout_centerInParent="true"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toTopOf="parent"/>-->
+
+    <com.google.android.material.textview.MaterialTextView
+
+        android:id="@+id/tv_price"
+        style="@style/descText"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>

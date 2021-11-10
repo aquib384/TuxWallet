@@ -1,0 +1,38 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="146dp"
+    android:height="146dp"
+    android:viewportWidth="146"
+    android:viewportHeight="146">
+  <group>
+    <clip-path
+        android:pathData="M73,73m-73,0a73,73 0,1 1,146 0a73,73 0,1 1,-146 0"/>
+    <path
+        android:pathData="M73.364,73m-73,0a73,73 0,1 1,146 0a73,73 0,1 1,-146 0"
+        android:fillColor="#0770ff"/>
+    <group>
+      <clip-path
+          android:pathData="M33.808,102.685l61.316,66.327 77.542,-66.327 -54.706,-58Z"/>
+      <path
+          android:pathData="M72.364,73m-73,0a73,73 0,1 1,146 0a73,73 0,1 1,-146 0"
+          android:fillColor="#0665e5"/>
+    </group>
+    <path
+        android:pathData="M86.981,71.816 L115.215,47.591A4.986,4.986 0,0 1,115.466 49.175L115.466,97.293a6.4,6.4 0,0 1,-0.251 1.671Z"
+        android:fillColor="#fff"/>
+    <path
+        android:pathData="M58.849,71.815 L30.615,47.591A4.986,4.986 0,0 0,30.364 49.175L30.364,97.293a6.4,6.4 0,0 0,0.251 1.671Z"
+        android:fillColor="#fff"/>
+    <path
+        android:pathData="M33.612,44.25a3.6,3.6 0,0 1,1.42 -0.251L111.298,43.999a4.73,4.73 0,0 1,1.5 0.251L84.4,68.558l-3.759,3.007 -7.434,6.1 -7.434,-6.1 -3.759,-3.007Z"
+        android:fillColor="#fff"/>
+    <path
+        android:pathData="M33.612,102.655 L62.097,75.343l11.026,8.938 11.026,-8.938L112.635,102.655a4.011,4.011 0,0 1,-1.42 0.251L34.949,102.906A3.783,3.783 0,0 1,33.612 102.655Z"
+        android:fillColor="#fff"/>
+    <path
+        android:pathData="M113.612,51.923m-17.44,0a17.44,17.44 0,1 1,34.88 0a17.44,17.44 0,1 1,-34.88 0"
+        android:fillColor="#fff"/>
+    <path
+        android:pathData="M131.048,51.92A17.438,17.438 0,1 1,113.61 34.483,17.437 17.437,0 0,1 131.048,51.92ZM111.593,61.153 L124.531,48.22a1.125,1.125 0,0 0,0 -1.591L122.94,45.034a1.125,1.125 0,0 0,-1.591 0L110.798,55.585l-4.926,-4.926a1.125,1.125 0,0 0,-1.591 0L102.689,52.249a1.125,1.125 0,0 0,0 1.591l7.313,7.313a1.125,1.125 0,0 0,1.591 0Z"
+        android:fillColor="#1de900"/>
+  </group>
+</vector>

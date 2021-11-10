@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:maxLines="1"
+    android:padding="10dp"
+    android:fontFamily="@font/poppins_semibold"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/windowColor"
+    android:ellipsize="marquee" />

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    tools:ignore="InvalidNavigation">
+
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="io.tux.wallet.testnet.fragment.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_market"
+        android:name="io.tux.wallet.testnet.fragment.MarketFragment"
+        android:label="@string/title_market"
+        tools:layout="@layout/fragment_market" />
+     <fragment
+        android:id="@+id/navigation_stake"
+        android:name="io.tux.wallet.testnet.fragment.StakeFragment"
+        android:label="@string/title_stake"
+        tools:layout="@layout/fragment_stake" />
+
+    <fragment
+        android:id="@+id/navigation_wallet"
+        android:name="io.tux.wallet.testnet.fragment.WalletFragment"
+        android:label="@string/title_wallet"
+        tools:layout="@layout/fragment_wallet" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="io.tux.wallet.testnet.fragment.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="io.tux.wallet.testnet.fragment.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/navigation_contact"
+        android:name="io.tux.wallet.testnet.fragment.ContactUsFragment"
+        android:label="@string/contact_us"
+        tools:layout="@layout/fragment_contact_us" />
+
+    <fragment
+        android:id="@+id/navigation_change_pin"
+        android:name="io.tux.wallet.testnet.fragment.ChangePinFragment"
+        android:label="@string/change_pin"
+        tools:layout="@layout/fragment_change_pin" />
+    <fragment
+        android:id="@+id/nav_market_detail"
+        android:name="io.tux.wallet.testnet.fragment.MarketDetailFragment"
+        android:label="@string/title_trade"
+        tools:layout="@layout/fragment_market_detail" />
+    <fragment
+        android:id="@+id/wallet_transaction"
+        android:name="io.tux.wallet.testnet.fragment.WalletTransactionFragment"
+        android:label="@string/transaction"
+        tools:layout="@layout/fragment_wallet_transaction" />
+ <fragment
+        android:id="@+id/wallet_search"
+        android:name="io.tux.wallet.testnet.fragment.SearchWalletFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search_wallet" />
+    <fragment
+        android:id="@+id/nav_coin_detail"
+        android:name="io.tux.wallet.testnet.fragment.CoinDetailsFragment"
+        android:label="@string/title_market"
+        tools:layout="@layout/fragment_coin_details" />
+  <fragment
+        android:id="@+id/nav_exchange"
+        android:name="io.tux.wallet.testnet.fragment.ExchangeFragment"
+        android:label="@string/exchange"
+        tools:layout="@layout/fragment_exchange" />
+  <fragment
+        android:id="@+id/navigation_notification"
+        android:name="io.tux.wallet.testnet.fragment.NotificationFragment"
+        android:label="@string/title_notification"
+        tools:layout="@layout/fragment_notification" />
+<fragment
+        android:id="@+id/navigation_withdraw"
+        android:name="io.tux.wallet.testnet.fragment.WithdrawFragment"
+        android:label="@string/withdraw"
+        tools:layout="@layout/fragment_withdraw" />
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="io.tux.wallet.testnet.fragment.SendFragment"
+        android:label="@string/send"
+        tools:layout="@layout/fragment_send" >
+        <action
+            android:id="@+id/action_nav_send_to_scan_qr"
+            app:destination="@id/scan_qr" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_receive"
+        android:name="io.tux.wallet.testnet.fragment.ReceiveFragment"
+        android:label="@string/receive"
+        tools:layout="@layout/fragment_receive" />
+    <fragment
+        android:id="@+id/navigation_currency"
+        android:name="io.tux.wallet.testnet.fragment.CurrencyFragment"
+        android:label="@string/currency"
+        tools:layout="@layout/fragment_currency" />
+ <fragment
+        android:id="@+id/navigation_buy_stakes"
+        android:name="io.tux.wallet.testnet.fragment.BuyStakesFragment"
+        android:label="@string/stake_title"
+        tools:layout="@layout/fragment_buy_stakes" />
+
+    <fragment
+        android:id="@+id/scan_qr"
+        android:name="io.tux.wallet.testnet.fragment.ScanQRFragment"
+        android:label="@string/title_scan"
+        tools:layout="@layout/fragment_scan_q_r" />
+    <fragment
+        android:id="@+id/my_qr"
+        android:name="io.tux.wallet.testnet.fragment.MyQRFragment"
+        android:label="@string/title_scan"
+        tools:layout="@layout/fragment_my_q_r" />
+
+    <fragment
+        android:id="@+id/email_verify"
+        android:name="io.tux.wallet.testnet.fragment.EmailVerifiedFragment"
+        android:label="@string/email"
+        tools:layout="@layout/fragment_email_verified" />
+
+  <fragment
+        android:id="@+id/nav_lang"
+        android:name="io.tux.wallet.testnet.fragment.LanguageFragment"
+        android:label="@string/language_title"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/nav_send_hisrty"
+        android:name="io.tux.wallet.testnet.fragment.transaction.SendTransactionHistryFragment"
+        android:label="@string/send"
+        tools:layout="@layout/fragmen_transaction_histry" >
+        <action
+            android:id="@+id/action_pop_transaction"
+            app:popUpTo="@+id/navigation_wallet"
+            app:popUpToInclusive="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_trade"
+        android:name="io.tux.wallet.testnet.fragment.TradeFragment"
+        android:label="@string/title_trade"
+        tools:layout="@layout/fragment_trade" />
+
+</navigation>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Draw the vertical line, left edge move to right 100dp and right edge move to fight 200dp. -->
+    <item
+        android:bottom="100dp"
+        android:right="70dp"
+       >
+        <shape android:shape="rectangle">
+            <size android:width="2dp"
+                android:height="10dp"/>
+            <solid android:color="?attr/textColor" />
+        </shape>
+    </item>
+    <!-- Draw the horizontal line, top edge move down 100dp and bottom edge move down 200dp. -->
+    <item
+        android:bottom="70dp"
+        android:right="100dp">
+        <shape android:shape="rectangle">
+            <size android:height="2dp"
+                android:width="10dp"/>
+            <solid android:color="?attr/textColor" />
+        </shape>
+    </item>
+    <item
+        android:top="100dp"
+        android:right="70dp"
+       >
+        <shape android:shape="rectangle">
+            <size android:width="2dp"
+                android:height="10dp"/>
+            <solid android:color="?attr/textColor" />
+        </shape>
+    </item>
+    <!-- Draw the horizontal line, top edge move down 100dp and bottom edge move down 200dp. -->
+    <item
+        android:top="70dp"
+        android:right="100dp">
+        <shape android:shape="rectangle">
+
+
+            <solid android:color="?attr/textColor"
+              />
+        </shape>
+    </item>
+    <item
+        android:bottom="100dp"
+        android:left="70dp"
+       >
+        <shape android:shape="rectangle">
+            <size android:width="2dp"
+                android:height="10dp"/>
+            <solid android:color="?attr/textColor" />
+        </shape>
+    </item>
+    <!-- Draw the horizontal line, top edge move down 100dp and bottom edge move down 200dp. -->
+    <item
+        android:left="100dp"
+        android:bottom="70dp">
+        <shape android:shape="rectangle">
+            <size android:height="2dp"
+                android:width="10dp"/>
+            <solid android:color="?attr/textColor" />
+        </shape>
+    </item>
+    <item
+        android:top="100dp"
+        android:left="70dp"
+       >
+        <shape android:shape="rectangle">
+            <size android:width="2dp"
+                android:height="10dp"/>
+            <solid android:color="?attr/textColor" />
+        </shape>
+    </item>
+    <!-- Draw the horizontal line, top edge move down 100dp and bottom edge move down 200dp. -->
+    <item
+        android:left="100dp"
+        android:top="70dp">
+        <shape android:shape="rectangle">
+            <size android:height="2dp"
+                android:width="10dp"/>
+            <solid android:color="?attr/textColor" />
+        </shape>
+    </item>
+</layer-list>

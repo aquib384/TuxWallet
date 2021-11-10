@@ -1,0 +1,324 @@
+<resources>
+    <string name="app_name">TuxWallet</string>
+    <string name="powered_by">Powered By</string>
+    <string name="company">TUX GLOBAL SDN. BHD.</string>
+    <string name="country">国</string>
+    <string name="Rs">\u20B9</string>
+
+    //guest login
+    <string name="guest_title">ウォレット作成</string>
+    <string name="guest_desc">このセクションをブラウズするにはウォレットを作成してください</string>
+
+    //welcome
+    <string name="switch_theme"><b><font color="#025FD5">ダークモード切り替え</font></b> </string>
+    <string name="screen1_title">暗号通貨を安全に保管  </string>
+    <string name="screen1_desc">多くのメジャー通貨を安心してご利用いただけます</string>
+    <string name="screen2_title">マーケットデータ追跡 </string>
+    <string name="screen2_desc">豊富な種類のマーケットデータに対応</string>
+    <string name="screen3_desc">簡単インターフェイスから市場データを確認 </string>
+
+    <string name="guest">ゲストで利用する </string>
+    <string name="new_wallet">新規ウォレット </string>
+    <string name="old_wallet">ウォレット復元</string>
+
+    //signup
+    <string name="create_wallet">ウォレットを新規作成</string>
+    <string name="enter_phone">電話番号を入力</string>
+    //recover wallet
+    <string name="security_pin">セキュリティPIN</string>
+    <string name="pin">PIN</string>
+    <string name="verify">認証</string>
+    <string name="enter_security_pin">セキュリティPINを入力</string>
+    <string name="enter_phrase_key">復元フレーズ入力</string>
+    <string name="enter_security_key">復元したいウォレットの１２ワード復元フレーズを入力してください</string>
+    //new wallet
+    <string name="new_wallet_msg">携帯電話を紛失した場合、この復元フレーズを使い資産をリカバリできます</string>
+    <string name="keep_safe">安全のため紙でメモを残し大切に保管してください</string>
+    <string name="word_phrase">１２ワード復元フレーズ</string>
+
+    //setpin
+    <string name="submit">送信</string>
+    <string name="set_pin_title">セキュリティPINを設定</string>
+    <string name="pin_error">PINを入力してください</string>
+    <string name="cpin_error">PINを再入力してください</string>
+    <string name="confirm_pin">PIN再確認</string>
+    <string name="pins_should_match">PINは一致する必要があります</string>
+    <string name="never_share_pin">PINは誰にも共有しないでください</string>
+    <string name="device_metrics">生体認証をオン </string>
+    <string name="set_pin_message">ウォレットを作成したので、アカウントの安全
+のためにPINを設定しましょう</string>
+    //Home Activity
+
+    <string name="title_home">ホーム</string>
+    <string name="title_market">マーケット</string>
+    <string name="title_trade">トレード</string>
+    <string name="title_stake">ステーキング</string>
+    <string name="title_wallet">ウォレット</string>
+    <string name="title_account">アカウント</string>
+    <string name="title_search">検索</string>
+    <string name="title_notification">通知</string>
+    <string name="title_scan">スキャン</string>
+    <string name="login_first">先にログインしてください</string>
+
+
+    //home fragment
+    <string name="tux_wallet">Tux Wallet</string>
+    <string name="buy_tux">TUXC 購入</string>
+    <string name="deposit">入金</string>
+    <string name="withdraw">出金</string>
+    <string name="favourite">お気に入り</string>
+    <string name="exchange">エクスチェンジ</string>
+    <string name="gainers">上位プロジェクト</string>
+    <string name="losers">下位プロジェクト</string>
+    <string name="h_vol">２４時間出来高</string>
+    <string name="pair">ペア</string>
+    <string name="last_price">最終価格</string>
+    <string name="volume_btc">出来高</string>
+    <string name="ranking_list">ランキングリスト</string>
+    <string name="terms_condition">
+        <font color="#025FD5">規約が適用されます</font></string>
+    <string name="ranking_msg"><font><small>暗号ステーキングは受動的な収入を稼ぐ方法です.</small></font></string>
+    <string name="deposit_msg">最初のデポジットを行い$1相当のBTCを受け取りましょう<br> </br>
+        <font>
+            <small>
+                コインステーキングは暗号通貨投資家の間で非常に人気が高まっています
+            </small>
+        </font>
+    </string>
+
+    //account fragment
+    <string name="logout">ログアウト</string>
+    <string name="edit_profile">プロフィール編集</string>
+    <string name="edit_desc">プロフィールを更新する</string>
+    <string name="settings">設定</string>
+    <string name="settings_desc">アカウント設定</string>
+    <string name="contact_us">お問合せ</string>
+    <string name="contact_desc">お気軽にお問い合わせください</string>
+
+    //wallet fragment
+    <string name="balance">保有残高</string>
+    <string name="transaction">履歴</string>
+    <string name="my_wallet">マイウォレット</string>
+
+    //stake fragment
+    <string name="stake_title">ステーキングで報酬を得る</string>
+    <string name="stake">ステーキング</string>
+    <string name="stake_desc">
+         <font><small>
+             コインステーキングは暗号通貨投資家の間で非常に人気が高まっています</small></font></string>
+    <string name="coin">コイン</string>
+<!--    <string name="date">データ</string>-->
+
+    <string name="stake_histry">ここであなたのステークスの歴史を見てください！</string>
+    <string name="stake_history">ステーク履歴</string>
+    <string name="stake_msg_title">ステーキング</string>
+    <string name="stake_msg_details">ウォレットの残高全体がバリデーターに賭けられ、ウォレットに保持されている金額に応じて報酬が自動的に分配されます。お財布に一部を賭ける機能はありません。さらに、バリデーターに賭けている間、いつでもウォレットでトークンを送受信できます（ロック期間はありません）。あなたが最初に賭けをするとき、2 ADAは、デポジットとして賭け証明書を作成するためにブロックチェーンによって請求されます。このため、私たちのウォレットは、ADAが5つ以上あるときに賭けることができるように設定されています。</string>
+    <string name="rewards_msg_title">報酬</string>
+
+    <string name="reward_msg_details"> 特典はエポックごとに配布されます。 1エポックは約5日です。報酬はブロックチェーンから自動的に配布されるため、「報酬を請求する」必要はありません。
+初めてADAを賭ける場合、報酬を獲得するには、承認されるまで20日待ってから、最初のサイクルが完了するまでさらに5日（1エポック）待つ必要があることに注意してください。つまり、[ステーキング]をクリックしてから25日後、その後は5日ごとに報酬の獲得を開始する必要があります。 </string>
+    //settings fragment
+
+    <string name="change_pin">ウォレットPIN変更</string>
+    <string name="set_pin">PIN設定</string>
+    <string name="language">言語</string>
+    <string name="currency">通貨</string>
+    <string name="biometrics">ログイン時生体認証</string>
+    <string name="pin_login">ログイン時PIN</string>
+    <string name="night">ダークモード</string>
+    <string name="curreny_updated">Currency Updated Successfully</string>
+    //language
+    <string name="english">English (US)</string>
+    <string name="japanese">日本語</string>
+    <string name="chinese">中国語</string>
+    <string name="confirm">確認</string>
+    <string name="language_title">言語の選択</string>
+
+
+    //change pin
+    <string name="old_pin">古いPIN</string>
+    <string name="new_pin">新しいPIN</string>
+    <string name="conf_pin">PIN再確認</string>
+    <string name="old_pin_incorrect">古いPINが間違っています</string>
+
+    //pin login
+    <string name="forgot_pin">PINを忘れた</string>
+    <string name="cancel">キャンセル</string>
+    <string name="enter_pin">PINを入力してください</string>
+    //edit profile
+    <string name="save_changes">変更を保存</string>
+
+
+    //contact us
+    <string name="email">メール</string>
+    <string name="name">お名前</string>
+    <string name="send">送信</string>
+    <string name="subject">件名</string>
+    <string name="description">説明</string>
+    <string name="subject_error">件名を入力</string>
+    <string name="desc_error">説明を入力</string>
+    <string name="name_error">名前を入力</string>
+    <string name="email_error">メールを入力</string>
+    <string name="email_recieved">メッセージを受信しました。しばらくお待ちください</string>
+    <string name="instruction_title">マニュアル</string>
+    <string name="instructions">*メールは公開されません <br> </br>
+        *返信まで２〜３日を要する場合があります<br> </br></string>
+    <!--    *へお電話ください</string>-->
+
+    //market
+    <string name="name_vol">ペア</string>
+    <string name="change_24">24h 出来高</string>
+
+    //exchange
+    <string name="crypto">暗号通貨</string>
+    <string name="amount">額面</string>
+    <string name="exchanging">エクスチェンジ中</string>
+    <string name="receiving">受信中</string>
+
+    // notifications
+    <string name="clear_all">全てクリア</string>
+    <string name="accept">受け取る</string>
+    <string name="decline">拒否する</string>
+    <string name="dummy_text">Tincidunt a ipsum facilisis egestas in vel. Tristique tincidunt semper turpis sit vestibulum consequat. Mi varius sit vitae.</string>
+
+    // withdraw
+    <string name="withdraw_msg">暗号通貨を選択し出金額を入力</string>
+    <string name="wallet_id">ウォレットID</string>
+    <string name="add_account">銀行口座を追加</string>
+    <string name="withdraw_to">出金先</string>
+    <string name="acc_ending_with">下の文字列 </string>
+
+    //buy Stakes
+    <string name="stake_warning">ご自分のリスク許容範囲でステーキングを行ってください</string>
+    <string name="stake_msg">ステーキングを行う通貨と額面の選択 </string>
+
+    <string name="continues">次へ</string>
+    // QR Code
+    <string name="pay_qr">支払いQRコードをスキャンする </string>
+    <string name="show_qr">自分のQRコード表示</string>
+    <string name="scan_qr">QRコードスキャナー</string>
+    // trade
+<!--    <string name="one_day">日</string>-->
+<!--    <string name="one_minute">分</string>-->
+<!--    <string name="one_hour">時</string>-->
+    <string name="coin_performance">コインパフォーマンス</string>
+    <string name="coin_per_msg">コインのパフォーマンスを確認</string>
+    <string name="buy_order">買い注文</string>
+    <string name="sell_order">売り注文</string>
+    <string name="track_order">注文履歴</string>
+    <string name="buy">購入</string>
+    <string name="sell">売却</string>
+    <string name="total_orders">注文合計</string>
+
+    //coinlist
+    <string name="choose_crypto">暗号通貨選択</string>
+
+    // send
+    <string name="wallet_address">ウォレットアドレス</string>
+    <string name="top_pairs">トップペア</string>
+    <string name="price">価格</string>
+    <string name="volume">出来高</string>
+    <string name="amount_error">数値入力</string>
+    <string name="amount_exceed_error">数値は利用可能額を超えています</string>
+    <string name="address_error">アドレス入力</string>
+    <string name="withdraw_instructions">
+        <![CDATA[*一度に送金する最低金額はnです<br>
+        *一度に送金できる最大金額はn * 2です </br><br>*該当する取引手数料 </br>
+    <br>*1日に行うことができるトランザクションの数はn個のみです</br>]]></string>
+    <string name="receive_instructions">
+        <![CDATA[*住所と一緒に正しいコインを選択してください<br>
+        *他のコインを送ると恒久的になる可能性があります。</br>]]></string>
+    <string name="send_msg">暗号を選択し、送信したい金額を入力します </string>
+
+    //receive
+    <string name="copy_link">アドレスコピー</string>
+    <string name="copy">コピー </string>
+    <string name="share">共有</string>
+    <string name="receive">受信</string>
+    <string name="pending">待機中</string>
+    <string name="my_wallet_add">私のウォレットアドレス</string>
+    <string name="receive_msg">QRコードとアドレスを確認する暗号通貨を選択 </string>
+
+    //trade
+    <string name="vol">VOL</string>
+    <string name="no_data">データがありません</string>
+
+    // add account
+    <string name="account_msg">アカウント保有者の詳細　名前、アカウント番号、IFSCコードなど</string>
+    <string name="account_number">アカウント番号</string>
+    <string name="ifsc_code">IFSCコード</string>
+    <string name="holder_name">アカウント保有者の名前</string>
+    <string name="add_account_title">アカウント詳細の入力</string>
+
+    // select bank
+    <string name="select_bank_title">銀行を選択</string>
+
+    //pin unlock
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+
+    //api
+    <string name="signed_up">サインアップ成功</string>
+    <string name="login_success">ログイン成功</string>
+    <string name="signup_error">問題が発生しました。もう一度お試しください</string>
+    <string name="hex_error">エラー　トランザクション再送信中</string>
+    <string name="select">復元フレーズの </string>
+    <string name="account_exist_error">アカウントが存在しません </string>
+    <string name="account_create_error">このフレーズのアカウントはすでに存在しています </string>
+    <string name="the_word">番目に含まれるワードを選択してください</string>
+
+    //coins
+    <string name="chainlink">CHAINLINK</string>
+    <string name="uniswap">UNISWAP</string>
+    <string name="aave_token">AAVE TOKEN</string>
+    <string name="sushiswap">SUSHISWAP</string>
+    <string name="band_token">BANDTOKEN</string>
+    <string name="ic_prefix">ic_</string>
+    <string name="ic_suffix">_24</string>
+
+
+    //send receipt
+    <string name="network_fee">ネットワークフィー</string>
+<!--    <string name="from">から</string>-->
+<!--    <string name="to">へ</string>-->
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="nounce">Nounce</string>
+    <string name="view_details">詳細確認</string>
+    <string name="wallet">ウォレット</string>
+    <string name="txn_hash">TX ハッシュ</string>
+    <string name="block">ブロック</string>
+    <string name="action">アクション</string>
+    <string name="confirmed">確認済</string>
+    <string name="text_copied">テキストがコピーされました</string>
+    <string name="tx_id">トランザクションID</string>
+    <string name="please_select_language">言語を選択してください</string>
+<!--    <string name="tow_high">24時間高</string>-->
+<!--    <string name="one_high">1H高</string>-->
+    <string name="tow_high">24H High</string>
+    <string name="one_high">1H High</string>
+    <string name="one_low">1H低</string>
+    <string name="tow_low">24時間低</string>
+
+    // upgrading screen
+    <string name="upgrade_title">ウォレットのアップグレード</string>
+    <string name="upgrade_msg">私たちはあなたの財布をアップグレードしています</string>
+    <string name="upgrade">アップグレード</string>
+    <string name="performance_msg">過去24時間のコインパフォーマンス</string>
+    <string name="copy_hash">Tx ID のコピー</string>
+    <string name="browse">ブロックチェーンで検証</string>
+
+    <string name="st">st</string>
+    <string name="nd">nd</string>
+    <string name="rd">rd</string>
+    <string name="th">th</string>
+    <string name="logout_msg">Your wallet will reset and go back to Create New Wallet or Recover Wallet. Make sure you have saved your Recovery Phrase</string>
+</resources>

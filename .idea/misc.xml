@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.21302083333333333" />
+        <entry key="app/src/main/res/layout/activity_create_wallet.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/dialog_market_autocomplete.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragmen_transaction_histry.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/fragment_buy_stakes.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/fragment_coin_details.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/fragment_market.xml" value="0.278125" />
+        <entry key="app/src/main/res/layout/fragment_stake.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_trx_list.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/fragment_wallet.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/item_bch.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/item_coin_performance.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/item_phrase_key_new.xml" value="0.15625" />
+        <entry key="app/src/main/res/layout/item_send_receive.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/item_wallet.xml" value="0.278125" />
+        <entry key="app/src/main/res/layout/layout_code_picker.xml" value="0.140625" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.19791666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="15" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

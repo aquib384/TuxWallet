@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.AccountFragment">
+
+
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/headingTextBold"
+                android:id="@+id/tv_title"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_account"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layerType="software"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="?attr/toolbarShadow" />
+
+<androidx.core.widget.NestedScrollView
+    android:layout_marginTop="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/card_verify"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:clipToPadding="true"-->
+<!--            app:cardUseCompatPadding="true">-->
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:padding="2dp"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <com.google.android.material.textview.MaterialTextView-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                    style="@style/headingText"-->
+<!--                    android:id="@+id/tv_verify_title"-->
+
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/verify_title"/>-->
+<!--                <com.google.android.material.textview.MaterialTextView-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/tv_verify_title"-->
+<!--                    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                    style="@style/descText"-->
+<!--                    android:id="@+id/tv_msg"-->
+
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/verify_msg"/>-->
+<!--                <ImageView-->
+
+<!--                    android:id="@+id/iv_deposit"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:layout_constraintRight_toRightOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/tv_msg"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    android:src="@drawable/ic_verify_img"-->
+<!--                    android:scaleType="center"/>-->
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/tv_msg"-->
+<!--                    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    style="@style/buttonMaterial"-->
+<!--                    android:id="@+id/btn_verify"-->
+<!--                    android:layout_marginBottom="15dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    app:layout_goneMarginBottom="10dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:drawableEnd="@drawable/ic_go"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                     android:layout_height="30dp"-->
+
+<!--                    android:textSize="14sp"-->
+<!--                    android:text="@string/verify"/>-->
+
+
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/card_edit"-->
+<!--            android:layout_margin="2dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--           app:layout_constraintTop_toBottomOf="@+id/card_verify"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            android:clipToPadding="true"-->
+<!--            android:visibility="gone"-->
+<!--            app:cardUseCompatPadding="true">-->
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:paddingTop="10dp"-->
+<!--                android:paddingBottom="10dp"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <com.google.android.material.textview.MaterialTextView-->
+<!--                    app:layout_constraintTop_toTopOf="@id/iv_edit"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/iv_edit"-->
+<!--                    style="@style/descTextBold"-->
+<!--                    android:id="@+id/tv_edit"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/edit_profile"/>-->
+<!--                <com.google.android.material.textview.MaterialTextView-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/tv_edit"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/iv_edit"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@id/iv_edit"-->
+<!--                    style="@style/descText"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:id="@+id/tv_edit_desc"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/edit_desc"/>-->
+<!--                <ImageView-->
+
+<!--                    android:id="@+id/iv_edit"-->
+<!--                    android:layout_width="30dp"-->
+<!--                     android:layout_height="30dp"-->
+<!--                        android:padding="2dp"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    android:src="@drawable/ic_edit_profile"-->
+<!--                    />-->
+<!--                <ImageView-->
+<!--                    style="@style/imageViewStyle"-->
+<!--                    android:id="@+id/iv_edit_go"-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:padding="5dp"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    android:src="@drawable/ic_next"-->
+<!--                    />-->
+
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_setting"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:cardCornerRadius="10dp"
+            android:clipToPadding="true"
+            app:cardUseCompatPadding="true">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView
+                    app:layout_constraintTop_toTopOf="@id/iv_setting"
+                    app:layout_constraintStart_toEndOf="@+id/iv_setting"
+                    style="@style/descTextBold"
+                    android:id="@+id/tv_setting"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings"/>
+                <com.google.android.material.textview.MaterialTextView
+                    app:layout_constraintTop_toBottomOf="@id/tv_setting"
+                    app:layout_constraintStart_toEndOf="@+id/iv_setting"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_setting"
+                    style="@style/descText"
+                    android:textSize="12sp"
+                    android:id="@+id/tv_setting_desc"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_desc"/>
+                <ImageView
+
+                    android:id="@+id/iv_setting"
+                    android:layout_width="30dp"
+                     android:layout_height="30dp"
+                        android:padding="2dp"
+                    android:layout_margin="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:src="@drawable/settings"
+                    />
+                <ImageView
+                    style="@style/imageViewStyle"
+                    android:id="@+id/iv_setting_go"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/ic_next"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_contact"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@+id/card_setting"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:cardCornerRadius="10dp"
+            android:clipToPadding="true"
+            app:cardUseCompatPadding="true">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView
+                    app:layout_constraintTop_toTopOf="@id/iv_contact"
+                    app:layout_constraintStart_toEndOf="@+id/iv_contact"
+                    style="@style/descTextBold"
+                    android:id="@+id/tv_contact"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_us"/>
+                <com.google.android.material.textview.MaterialTextView
+                    app:layout_constraintTop_toBottomOf="@id/tv_contact"
+                    app:layout_constraintStart_toEndOf="@+id/iv_contact"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_contact"
+                    style="@style/descText"
+                    android:textSize="12sp"
+                    android:id="@+id/tv_contact_desc"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_desc"/>
+                <ImageView
+
+                    android:id="@+id/iv_contact"
+                    android:layout_width="30dp"
+                     android:layout_height="30dp"
+                        android:padding="2dp"
+                    android:layout_margin="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:src="@drawable/ic_support"
+                    />
+                <ImageView
+                    style="@style/imageViewStyle"
+                    android:id="@+id/iv_contact_go"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/ic_next"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

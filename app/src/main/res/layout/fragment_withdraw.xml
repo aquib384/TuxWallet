@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.WithdrawFragment">
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:id="@+id/iv_back"
+                style="@style/imageViewStyle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.textview.MaterialTextView
+
+                app:layout_constraintLeft_toRightOf="@id/iv_back"
+                app:layout_constraintTop_toTopOf="@id/iv_back"
+                app:layout_constraintBottom_toBottomOf="@id/iv_back"
+
+
+                style="@style/headingTextBold"
+                android:id="@+id/tv_title"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/withdraw"/>
+            <com.google.android.material.textview.MaterialTextView
+
+               app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                style="@style/descTextBold"
+                android:id="@+id/tv_withdraw_msg"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/withdraw_msg"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_crypto1"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_withdraw_msg"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:orientation="horizontal"
+                app:startIconTint="@null"
+                app:startIconTintMode="src_over"
+                android:hint="@string/crypto"
+                style="@style/editTextMaterial">
+
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+
+                    android:id="@+id/auto_1"
+                    android:inputType="text"
+                    android:drawableEnd="@drawable/ic_arrow_drop_down"
+                    android:drawableTint="@color/grey"
+                    android:paddingEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lay_amount1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_withdraw_msg"
+                app:layout_constraintLeft_toRightOf="@+id/lay_crypto1"
+                app:layout_constraintRight_toRightOf="parent"
+
+                android:hint="@string/amount"
+                style="@style/editTextMaterial">
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/et_amount1"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textview.MaterialTextView
+                app:layout_constraintTop_toBottomOf="@id/lay_amount1"
+                app:layout_constraintRight_toRightOf="parent"
+                style="@style/descText"
+                android:id="@+id/tv_available_bal"
+                android:padding="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/balance"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_available_bal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/lin_wallet"
+                android:weightSum="5">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lay_wallet"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="@string/wallet_address"
+                    android:layout_weight="4.2"
+                    style="@style/editTextMaterial">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:padding="12dp"
+                        android:layout_gravity="fill"
+                        android:id="@+id/et_wallet"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <ImageView
+
+                    android:id="@+id/iv_scan"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight=".8"
+                    android:contentDescription="@string/exchange"
+                    android:padding="10dp"
+                    style="@style/imageViewStyle"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_scan"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="?attr/colorDark"
+                    />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                app:layout_constraintTop_toBottomOf="@+id/lin_wallet"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                style="@style/descText"
+                android:padding="12dp"
+                android:id="@+id/rv_accounts"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/add_account"/>
+            <com.google.android.material.textview.MaterialTextView
+                app:layout_constraintTop_toBottomOf="@+id/rv_accounts"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                style="@style/descText"
+                android:background="@drawable/button_border_rect"
+                android:padding="12dp"
+                android:id="@+id/btn_add_account"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:drawableStart="@drawable/ic_add"
+                android:drawablePadding="10dp"
+                android:drawableTint="?attr/textColor"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/add_account"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                style="@style/buttonMaterial"
+                android:id="@+id/btn_confirm"
+
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/confirm"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

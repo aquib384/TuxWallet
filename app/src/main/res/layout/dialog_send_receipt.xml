@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_bg_top_sides">
+
+    <TextView
+        android:id="@+id/tv_page_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/card_light_top_rounded"
+        style="@style/headingTextBold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        style="@style/imageViewStyle"
+        android:padding="2dp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_history_24"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tv_page_title"
+        app:layout_constraintTop_toTopOf="@id/tv_page_title"
+        app:layout_constraintBottom_toBottomOf="@id/tv_page_title"
+        android:id="@+id/iv_close"/>
+    <ImageView
+
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_page_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/exchange"
+        android:padding="10dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_complete"
+
+        />
+    <com.google.android.material.textview.MaterialTextView
+        app:layout_constraintTop_toBottomOf="@id/iv_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        style="@style/headingText"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/confirmed"
+        android:id="@+id/tv_status"
+        tools:ignore="RtlCompat" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_data"
+        style="@style/cardViewStyleLight"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_status"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="10dp"
+        android:clipToPadding="true"
+        app:cardUseCompatPadding="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lin_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:weightSum="2">
+                <com.google.android.material.textview.MaterialTextView
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/headingText"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:textAlignment="viewStart"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="@string/amount"
+                    tools:ignore="RtlCompat" />
+                <com.google.android.material.textview.MaterialTextView
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/headingText"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_amt"
+                    android:paddingEnd="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="viewEnd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ellipsize="middle"
+                    android:maxLines="1"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_fee"
+                app:layout_constraintTop_toBottomOf="@id/lin_amount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <com.google.android.material.textview.MaterialTextView
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/descTextBold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:textAlignment="viewStart"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/network_fee"
+                    tools:ignore="RtlCompat" />
+                <com.google.android.material.textview.MaterialTextView
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/descTextBold"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_fee"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="viewEnd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                  android:paddingEnd="2dp"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_line"
+                app:layout_constraintTop_toBottomOf="@id/lin_fee"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/dotted_line"
+                android:layerType="software" />
+            <LinearLayout
+                android:id="@+id/lin_from"
+                app:layout_constraintTop_toBottomOf="@id/iv_line"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+                <com.google.android.material.textview.MaterialTextView
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/descText"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:textAlignment="viewStart"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="@string/from"
+                    tools:ignore="RtlCompat" />
+                <com.google.android.material.textview.MaterialTextView
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/descTextBold"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_from"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="viewEnd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:paddingEnd="2dp"
+                    android:ellipsize="middle"
+                    android:maxLines="1"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout><LinearLayout
+                android:id="@+id/lin_to"
+                app:layout_constraintTop_toBottomOf="@id/lin_from"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:weightSum="2">
+                <com.google.android.material.textview.MaterialTextView
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/descText"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:textAlignment="viewStart"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="@string/to"
+                    tools:ignore="RtlCompat" />
+                <com.google.android.material.textview.MaterialTextView
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/descTextBold"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_to"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="viewEnd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:paddingEnd="2dp"
+                    android:ellipsize="middle"
+                    android:maxLines="1"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_date"
+                app:layout_constraintTop_toBottomOf="@id/lin_to"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:weightSum="2">
+                <com.google.android.material.textview.MaterialTextView
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/descTextBold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:textAlignment="viewStart"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="@string/date"
+                    tools:ignore="RtlCompat" />
+                <com.google.android.material.textview.MaterialTextView
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/descTextBold"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_date"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="viewEnd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:paddingEnd="2dp"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_nonce"
+                app:layout_constraintTop_toBottomOf="@id/lin_date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:weightSum="2">
+                <com.google.android.material.textview.MaterialTextView
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/descTextBold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:textAlignment="viewStart"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="@string/nounce"
+                    tools:ignore="RtlCompat" />
+                <com.google.android.material.textview.MaterialTextView
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/descTextBold"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_nonce"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="viewEnd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:paddingEnd="2dp"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

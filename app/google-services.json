@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "472979751110",
+    "firebase_url": "https://tux-wallet-7a673.firebaseio.com",
+    "project_id": "tux-wallet-7a673",
+    "storage_bucket": "tux-wallet-7a673.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472979751110:android:e5eb0216fb3391dde157c7",
+        "android_client_info": {
+          "package_name": "io.tux.wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472979751110-b429khg5pf1cb5fma27c6isq9mh15vet.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.tux.wallet",
+            "certificate_hash": "11ab7ab58d8ed17e40493eb7ae0f784307c2a877"
+          }
+        },
+        {
+          "client_id": "472979751110-5kk6jmi6542k304mvhp6cs771uio62ln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADFxtL5plEVdcDh0-Tsovrb_MBbrOciCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472979751110-5kk6jmi6542k304mvhp6cs771uio62ln.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "472979751110-je70aq3lr2n0ce5lllstfc906dicb0vq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "net.tuxglobal.wallet",
+                "app_store_id": "1495945761"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472979751110:android:fa7a85d588c9a4aee157c7",
+        "android_client_info": {
+          "package_name": "io.tux.wallet.testnet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472979751110-nrcdghl04mnml4a3mvvf3mfinq4t7fat.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.tux.wallet.testnet",
+            "certificate_hash": "20551e400ce7ec609de99ccab92012a62ded8e6c"
+          }
+        },
+        {
+          "client_id": "472979751110-5kk6jmi6542k304mvhp6cs771uio62ln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADFxtL5plEVdcDh0-Tsovrb_MBbrOciCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472979751110-5kk6jmi6542k304mvhp6cs771uio62ln.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "472979751110-je70aq3lr2n0ce5lllstfc906dicb0vq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "net.tuxglobal.wallet",
+                "app_store_id": "1495945761"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

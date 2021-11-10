@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.SearchWalletFragment">
+
+
+
+<!--    <androidx.core.widget.NestedScrollView-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:fillViewport="true">-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+
+            android:id="@+id/iv_back"
+            style="@style/imageViewStyle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.textview.MaterialTextView
+
+            app:layout_constraintLeft_toRightOf="@id/iv_back"
+            app:layout_constraintTop_toTopOf="@id/iv_back"
+            app:layout_constraintBottom_toBottomOf="@id/iv_back"
+
+
+            style="@style/headingTextBold"
+            android:id="@+id/tv_title"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_search"/>
+
+       <androidx.appcompat.widget.SearchView
+           android:layout_width="0dp"
+           android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+           android:layout_marginEnd="5dp"
+           android:layout_marginTop="10dp"
+           app:layout_constraintTop_toBottomOf="@id/tv_title"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toLeftOf="@id/iv_cancel"
+           android:id="@+id/searchView"
+           android:iconifiedByDefault="false"
+           app:closeIcon="@null"
+           android:background="@drawable/button_bg"
+           android:backgroundTint="?attr/colorDark"
+           app:iconifiedByDefault="false"
+           android:focusedByDefault="true"
+           app:defaultQueryHint="@string/search"
+           android:queryHint="@string/title_search"
+           android:closeIcon="@null"
+           style="@style/searchView"/>
+
+<!--        <SearchView-->
+<!--            android:id="@+id/searchView"-->
+<!--            style="@style/searchView"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:hint="@string/search"-->
+<!--            android:drawableStart="@drawable/ic_search"-->
+<!--            android:drawableTint="@color/grey"-->
+<!--            android:padding="10dp"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toLeftOf="@id/iv_cancel"-->
+<!--            android:background="@drawable/button_bg"-->
+<!--            android:textSize="15sp"-->
+<!--            android:iconifiedByDefault="false"-->
+<!--            android:backgroundTint="?attr/colorDark"/>-->
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="?attr/colorDark"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/searchView"
+            app:layout_constraintBottom_toBottomOf="@id/searchView"
+            android:id="@id/iv_cancel"
+            android:padding="18dp"
+            android:contentDescription="@string/cancel"
+            style="@style/imageViewStyle"
+            android:src="@drawable/ic_close_24dp"/>
+
+        <RelativeLayout
+            app:layout_constraintTop_toBottomOf="@id/searchView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:descendantFocusability="beforeDescendants"
+            android:layoutAnimation="@anim/layout_animation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+<!--            <com.facebook.shimmer.ShimmerFrameLayout-->
+<!--                android:id="@+id/shimmer_wallet"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <include layout="@layout/item_market_shimmer"/>-->
+<!--                    <include layout="@layout/item_market_shimmer"/>-->
+<!--                    <include layout="@layout/item_market_shimmer"/>-->
+<!--                    <include layout="@layout/item_market_shimmer"/>-->
+<!--                    <include layout="@layout/item_market_shimmer"/>-->
+<!--                    <include layout="@layout/item_market_shimmer"/>-->
+<!--                    <include layout="@layout/item_market_shimmer"/>-->
+<!--                    <include layout="@layout/item_market_shimmer"/>-->
+<!--                    <include layout="@layout/item_market_shimmer"/>-->
+<!--                    <include layout="@layout/item_market_shimmer"/>-->
+<!--                    <include layout="@layout/item_market_shimmer"/>-->
+<!--                    <include layout="@layout/item_market_shimmer"/>-->
+<!--                    <include layout="@layout/item_market_shimmer"/>-->
+<!--                    <include layout="@layout/item_market_shimmer"/>-->
+
+<!--                </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--            </com.facebook.shimmer.ShimmerFrameLayout>-->
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layoutAnimation="@anim/layout_animation"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+        </RelativeLayout>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/gradeint_progress"
+            android:indeterminateTint="@color/colorPrimaryBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            android:elevation="10dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+</FrameLayout>

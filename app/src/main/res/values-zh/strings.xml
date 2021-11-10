@@ -1,0 +1,326 @@
+<resources>
+    <string name="app_name">TuxWallet</string>
+    <string name="powered_by">Powered By</string>
+    <string name="company">TUX GLOBAL SDN. BHD.</string>
+    <string name="country">国家</string>
+    <string name="Rs">\u20B9</string>
+
+    //guest login
+    <string name="guest_title">创建钱包</string>
+    <string name="guest_desc">您必须创建钱包才能浏览此部分。</string>
+
+    //welcome
+    <string name="switch_theme"><b><font color="#025FD5">Switch to dark theme</font></b> </string>
+    <string name="screen1_title">安全存储加密货币 </string>
+    <string name="screen1_desc">您可以将您的加密货币存放在这里，更换使用一个自监管的平台。 </string>
+    <string name="screen2_title">跟踪市场价值 </string>
+    <string name="screen2_desc">您可以轻松地购买、出售或兑换多种加密货币。  </string>
+    <string name="screen3_desc">您可以通过用户友好的界面获得加密货币的应有市场价值。 </string>
+
+    <string name="guest">访客身份进入 </string>
+    <string name="new_wallet">新钱包</string>
+    <string name="old_wallet">恢复钱包</string>
+
+    //signup
+    <string name="create_wallet">创建一个新钱包</string>
+    <string name="enter_phone">输入电话号码继续</string>
+    //recover wallet
+    <string name="security_pin">安全PIN码</string>
+    <string name="pin">PIN码</string>
+    <string name="verify">验证</string>
+    <string name="enter_security_pin">输入您的安全PIN码</string>
+    <string name="enter_phrase_key">输入密钥</string>
+    <string name="enter_security_key">输入一个由12个单词组成的钱包找回密钥</string>
+    //new wallet
+    <string name="new_wallet_msg">如果您的手机丢了，您需要这句话来找回您的钱包</string>
+    <string name="keep_safe">请将它记下来，以便将来使用您的钱包</string>
+    <string name="word_phrase">12个单词的密钥</string>
+
+    //setpin
+    <string name="submit">提交</string>
+    <string name="set_pin_title">设置安全PIN码</string>
+    <string name="pin_error">请输入PIN码</string>
+    <string name="cpin_error">请重新输入PIN码</string>
+    <string name="confirm_pin"> 确认PIN码</string>
+    <string name="pins_should_match">PIN码应该匹配</string>
+    <string name="never_share_pin">不要和任何人分享您的Pin码 </string>
+    <string name="device_metrics">打开设备生物识别</string>
+    <string name="set_pin_message">既然你已经创建了你的钱包，为什么不为你的账户安全设置 pin </string>
+    //Home Activity
+
+    <string name="title_home">首页</string>
+    <string name="title_market">市场</string>
+    <string name="title_trade">交易</string>
+    <string name="title_stake">质押</string>
+    <string name="title_wallet">钱包</string>
+    <string name="title_account">账户</string>
+    <string name="title_search">搜索</string>
+    <string name="title_notification">通知</string>
+    <string name="title_scan">扫描</string>
+    <string name="login_first">您需要先登录!!</string>
+
+
+    //home fragment
+    <string name="tux_wallet">Tux Wallet</string>
+    <string name="buy_tux">购买Tux</string>
+    <string name="deposit">充值</string>
+    <string name="withdraw">提取</string>
+    <string name="favourite">收藏夹</string>
+    <string name="exchange">交易</string>
+    <string name="gainers">获胜者</string>
+    <string name="losers">失败者</string>
+    <string name="h_vol">24h成交量</string>
+    <string name="pair">对</string>
+    <string name="last_price">最新价格</string>
+    <string name="volume_btc">成交量</string>
+    <string name="ranking_list">排行榜</string>
+    <string name="terms_condition">
+        <font color="#025FD5">适用条款和条件</font></string>
+    <string name="ranking_msg"><font><small>加密抵押是一种赚取被动收入的方式.</small></font></string>
+    <string name="deposit_msg">首笔充值可获得价值$1的比特币。<br> </br>
+        <font>
+            <small>
+                Coin Staking 在加密货币投资者中变得非常流行
+            </small>
+        </font>
+    </string>
+
+    //account fragment
+    <string name="logout">退出</string>
+    <string name="edit_profile">编辑个人资料</string>
+    <string name="edit_desc">编辑/更新您的个人资料</string>
+    <string name="settings">设置</string>
+    <string name="settings_desc">更新您的账户设置</string>
+    <string name="contact_us">联系我们</string>
+    <string name="contact_desc">我们随时为您提供帮助</string>
+
+    //wallet fragment
+    <string name="balance">可用余额</string>
+    <string name="transaction">交易</string>
+    <string name="my_wallet">我的钱包</string>
+
+    //stake fragment
+    <string name="stake_title">了解您的质押物!</string>
+    <string name="stake">质押</string>
+    <string name="stake_desc">
+         <font><small>
+                Coin Staking 在加密货币投资者中变得非常流行
+         </small> </font> </string>
+    <string name="coin">币种</string>
+<!--    <string name="date">数据</string>-->
+    <string name="stake_histry">在此处查看您的赌注历史！</string>
+    <string name="stake_history">股权历史</string>
+    <string name="stake_msg_title">放样</string>
+    <string name="stake_msg_details">钱包的全部余额将抵押给验证者，并根据钱包中持有的金额自动分配奖励。没有功能可以将部分金额存入您的钱包。此外，您可以随时在钱包中发送和接收代币，同时向验证人质押（没有锁定期）。当您首次质押时，区块链将收取 2 个 ADA 以创建质押凭证作为押金。为此，我们的钱包设置为在您至少拥有 5 个 ADA 时能够进行质押。</string>
+
+    <string name="rewards_msg_title">奖励</string>
+
+    <string name="reward_msg_details"> 奖励将按时期分配。一个时期大约是 5 天。由于奖励是从区块链自动分配的，因此无需“领取奖励”。
+        请注意，如果您第一次质押 ADA，您需要等待 20 天获得批准，然后再等待 5 天（一个 epoch）完成第一个周期才能获得奖励。这意味着您应该在点击 Staking 25 天后开始获得奖励，然后每 5 天获得一次奖励。</string>
+    //settings fragment
+
+    <string name="change_pin">更改钱包PIN码</string>
+    <string name="set_pin">设置PIN码</string>
+    <string name="language">语言</string>
+    <string name="currency">货币</string>
+    <string name="biometrics">生物识别登录</string>
+    <string name="pin_login">PIN码登录</string>
+    <string name="night">黑暗模式</string>
+    <string name="curreny_updated">Currency Updated Successfully</string>
+    //language
+    <string name="english">English (US)</string>
+    <string name="japanese">日语</string>
+    <string name="chinese">中文</string>
+    <string name="confirm">确认</string>
+    <string name="language_title">选择语言</string>
+
+
+    //change pin
+    <string name="old_pin">旧PIN码</string>
+    <string name="new_pin">新PIN码</string>
+    <string name="conf_pin">确认PIN码</string>
+    <string name="old_pin_incorrect">输入的旧PIN码不正确</string>
+
+    //pin login
+    <string name="forgot_pin">忘记PIN码</string>
+    <string name="cancel">取消</string>
+    <string name="enter_pin">请输入您的密码</string>
+
+    //edit profile
+    <string name="save_changes">保存更改</string>
+
+
+    //contact us
+    <string name="email">电子邮件ID</string>
+    <string name="name">全名</string>
+    <string name="send">发送</string>
+    <string name="subject">主题</string>
+    <string name="description">描述</string>
+    <string name="subject_error">输入主题</string>
+    <string name="desc_error">输入描述</string>
+    <string name="name_error">输入您的全名</string>
+    <string name="email_error">输入您的电子邮件ID</string>
+    <string name="email_recieved">我们已经收到您的邮件，将很快回复您</string>
+    <string name="instruction_title">说明</string>
+    <string name="instructions">*メールは公開されません <br> </br>
+        *可能需要2-3个工作日才能恢复 <br> </br></string>
+<!--    **如果仍未恢复，请呼叫1800-000-000</string>-->
+
+    //market
+    <string name="name_vol">名称/卷</string>
+    <string name="change_24">24小时更改</string>
+
+    //exchange
+    <string name="crypto">加密货币</string>
+    <string name="amount">金额</string>
+    <string name="exchanging">兑换中</string>
+    <string name="receiving">接收中</string>
+
+    // notifications
+    <string name="clear_all">清除所有</string>
+    <string name="accept">接受</string>
+    <string name="decline">拒绝</string>
+    <string name="dummy_text">Tincidunt a ipsum facilisis egestas in vel. Tristique tincidunt semper turpis sit vestibulum consequat. Mi varius sit vitae.</string>
+
+    // withdraw
+    <string name="withdraw_msg">选择加密货币并输入您想提取的金额</string>
+    <string name="wallet_id">钱包ID</string>
+    <string name="add_account">添加银行账户</string>
+    <string name="withdraw_to">提取到</string>
+    <string name="acc_ending_with">账户结尾</string>
+
+    //buy Stakes
+    <string name="stake_warning">质押风险自负</string>
+    <string name="stake_msg">选择要质押的加密货币和金额 </string>
+
+    <string name="continues">继续</string>
+    // QR Code
+    <string name="pay_qr">扫描二维码支付 </string>
+    <string name="show_qr">显示我的二维码</string>
+    <string name="scan_qr">二维码扫描器</string>
+    // trade
+<!--    <string name="one_day">天</string>-->
+<!--    <string name="one_minute">分钟</string>-->
+<!--    <string name="one_hour">小时</string>-->
+    <string name="coin_performance">币种走势</string>
+    <string name="coin_per_msg">查看币种最新走势</string>
+    <string name="buy_order">买入订单</string>
+    <string name="sell_order">卖出订单</string>
+    <string name="track_order">跟踪订单</string>
+    <string name="buy">买入</string>
+    <string name="sell">卖出</string>
+    <string name="total_orders">所有订单</string>
+
+    //coinlist
+    <string name="choose_crypto">选择加密货币</string>
+
+    // send
+    <string name="wallet_address">钱包地址</string>
+    <string name="top_pairs">热门加密货币对</string>
+    <string name="price">价格</string>
+    <string name="volume">数量</string>
+    <string name="amount_error">输入金额</string>
+    <string name="amount_exceed_error">金额超过可用余额</string>
+    <string name="address_error">输入地址</string>
+    <string name="withdraw_instructions">
+        <![CDATA[*一次最小转账金额为n <br>
+        *一次最大转账金额为n*2 </br><br>*适用交易费 </br>
+    <br>*一天只能进行n笔交易</br>]]></string>
+    <string name="receive_instructions">
+        <![CDATA[*请选择正确的币种和地址。<br>
+        *发送任何其他币种可能导致永久消失。</br>]]></string>
+    <string name="send_msg">选择加密货币并输入您要发送的金额</string>
+
+    //receive
+    <string name="copy_link">复制链接</string>
+    <string name="copy">复制 </string>
+    <string name="share">分享</string>
+    <string name="receive">接收</string>
+    <string name="pending">等待中</string>
+    <string name="my_wallet_add">我的钱包地址</string>
+    <string name="receive_msg">选择加密货币以查看您的地址和二维码</string>
+
+    //trade
+    <string name="vol">VOL</string>
+    <string name="no_data">没有可用数据</string>
+
+    // add account
+    <string name = "account_msg">输入账户持有人的详细信息，例如。、姓名、账号及IFSC代码。</string>
+    <string name = "account_number">账号</string>
+    <string name = "ifsc_code">IFSC代码</string>
+    <string name = "holder_name">账户持有人的名字</string>
+    <string name = "add_account_title">输入账户信息</string>
+
+    // select bank
+    <string name ="select_bank_title">选择您的银行</string>
+
+    //pin unlock
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+
+    //api
+    <string name="signed_up">注册成功</string>
+    <string name="login_success">登录成功</string>
+    <string name="signup_error">出现错误。再试一次!</string>
+    <string name="hex_error">初始化交易出错!!</string>
+    <string name="select">选择 </string>
+    <string name="account_exist_error">账户不存在 </string>
+    <string name="account_create_error">账户已使用如下列表中的</string>
+    <string name="the_word">此恢复密钥注册。</string>
+
+    //coins
+    <string name="chainlink">CHAINLINK</string>
+    <string name="uniswap">UNISWAP</string>
+    <string name="aave_token">AAVE TOKEN</string>
+    <string name="sushiswap">SUSHISWAP</string>
+    <string name="band_token">BANDTOKEN</string>
+    <string name="ic_prefix">ic_</string>
+    <string name="ic_suffix">_24</string>
+
+
+    //send receipt
+    <string name="network_fee">网络费</string>
+<!--    <string name="from">从</string>-->
+<!--    <string name="to">到</string>-->
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="nounce">Nounce</string>
+    <string name="view_details">查看详细信息</string>
+    <string name="wallet">钱包</string>
+    <string name="txn_hash">交易哈希</string>
+    <string name="block">区块</string>
+    <string name="action">行动</string>
+    <string name="confirmed">已确认</string>
+    <string name="text_copied">文本已复制到剪贴板</string>
+    <string name="tx_id">交易编号</string>
+    <string name="please_select_language">请选择语言</string>
+<!--    <string name="tow_high">24小时高</string>-->
+<!--    <string name="one_high">1小时高</string>-->
+    <string name="tow_high">24H High</string>
+    <string name="one_high">1H High</string>
+    <string name="one_low">1小时低</string>
+    <string name="tow_low">24小时低</string>
+
+    // upgrading screen
+    <string name="upgrade_title">升级钱包</string>
+    <string name="upgrade_msg">我们正在升级您的钱包</string>
+    <string name="upgrade">升级</string>
+    <string name="performance_msg">过去 24 小时的硬币表现</string>
+    <string name="copy_hash">复制 Tx ID</string>
+    <string name="browse">在区块链上验证</string>
+
+    <string name="st">st</string>
+    <string name="nd">nd</string>
+    <string name="rd">rd</string>
+    <string name="th">th</string>
+    <string name="logout_msg">Your wallet will reset and go back to Create New Wallet or Recover Wallet. Make sure you have saved your Recovery Phrase</string>
+    <string name="check_recovery_phase">Check Recovery Phase</string>
+</resources>
